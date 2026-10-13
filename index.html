@@ -10,20 +10,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
 <style>
-/* Layout: Fixit black-and-white — white page, near-black ink, grey steps for every second series; strengths solid, weaknesses hatched. Serif headlines, Inter body. One centred column, tabbed dashboard. */
+/* Layout: Fixit look — white page, near-black chrome (logo, tabs, buttons, banners); colour lives on boxes and charts using the Estate 361 site palette: green = family / strength, amber = Antara, red = problem, blue = Max. Serif headlines, Inter body. */
 :root{
   color-scheme:light;
-  --bg:#FFFFFF; --surface:#FFFFFF; --surface-2:#F4F4F5; --line:#E4E4E7; --track:#EDEDEF;
-  --ink:#0A0A0A; --ink-2:#3F3F46; --muted:#71717A; --head:#0A0A0A;
-  --brand:#0A0A0A; --brand-strong:#0A0A0A; --brand-soft:#F4F4F5; --cyan:#0A0A0A;
-  --navy:#0A0A0A; --navy-2:#18181B; --on-navy:#FFFFFF; --on-navy-2:#A1A1AA;
-  --hero:#0A0A0A;
-  --forest:#0A0A0A; --on-forest:#FFFFFF; --on-forest-2:#A1A1AA;
-  --family:#0A0A0A; --family-soft:#F4F4F5; --senior:#6E6E73; --senior-soft:#F4F4F5;
-  --good:#0A0A0A; --good-soft:#F4F4F5; --bad:#0A0A0A; --bad-soft:#F4F4F5;
-  --max:#0A0A0A; --broker:#3F3F46; --other:#E4E4E7; --grey:#C7C7CC; --tab-on:#0A0A0A;
-  --hatch:repeating-linear-gradient(135deg,#0A0A0A 0 2px,#FFFFFF 2px 5px);
-  --p1:#0A0A0A; --p2:#27272A; --p3:#3F3F46; --p4:#52525B; --p5:#636369; --p6:#75757B;
+  --bg:#FFFFFF; --surface:#FFFFFF; --surface-2:#F8F6F0; --line:#ECEAE4; --track:#ECE9E1;
+  --ink:#18181B; --ink-2:#3F3F46; --muted:#5F6368; --head:#18181B;
+  --brand:#18181B; --brand-strong:#18181B; --brand-soft:#F4F4F5; --cyan:#9A6B12;
+  --navy:#18181B; --navy-2:#27272A; --on-navy:#FFFFFF; --on-navy-2:#A1A1AA;
+  --hero:#18181B;
+  --forest:#18181B; --on-forest:#FFFFFF; --on-forest-2:#A1A1AA;
+  --family:#0F8A64; --family-soft:#E4F2EC; --senior:#B8730A; --senior-soft:#F7ECDA;
+  --good:#0F8A64; --good-soft:#E4F2EC; --bad:#D64545; --bad-soft:#FBE5E5;
+  --blue:#2563EB; --blue-soft:#EBF1FE;
+  --max:#2563EB; --broker:#D64545; --other:#CDC9BF; --grey:#A8A49B; --tab-on:#18181B;
+  --hatch:#D64545;
+  --p1:#0F8A64; --p2:#18181B; --p3:#B8730A; --p4:#2563EB; --p5:#7C3AED; --p6:#8A6440;
   --display:'Playfair Display',Georgia,'Times New Roman',serif;
   --body:'Inter',-apple-system,'Segoe UI',Roboto,sans-serif;
   --mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
@@ -96,7 +97,7 @@ button{font-family:inherit;cursor:pointer}
 .sec{display:grid;gap:14px}
 .sec > h2{font-size:clamp(24px,3.2vw,34px);line-height:1.1}
 .tag{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:4px 9px;border-radius:5px;background:var(--navy);color:var(--on-navy);width:max-content}
-.tag.bad{background:var(--bad);color:#fff} .tag.c{background:var(--cyan);color:#fff} .tag.d{background:var(--brand-strong);color:#fff}
+.tag.bad{background:var(--bad);color:#fff} .tag.c{background:#9A6B12;color:#fff} .tag.d{background:var(--blue);color:#fff}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;min-width:0}
 .card h3{font-family:var(--body);font-size:15.5px;font-weight:600;color:var(--ink)}
 .card .cap{font-size:12.5px;color:var(--muted);margin-top:2px}
@@ -111,10 +112,10 @@ button{font-family:inherit;cursor:pointer}
 .tile .v{font-family:var(--display);font-size:clamp(26px,3vw,36px);font-weight:600;letter-spacing:-.01em;line-height:1;color:var(--head)}
 .tile .v small{font-size:.5em;color:var(--muted);font-family:var(--body);font-weight:500;margin-left:3px}
 .tile p{font-size:13px;color:var(--ink-2);margin-top:8px}
-.tile.bad{border-top:3px solid var(--bad)}
-.tile.ok{background:var(--good-soft);border-color:transparent}
+.tile.bad{border-top:3px solid var(--bad);background:linear-gradient(180deg,#FFF7F7,#FFFFFF 60%)}
+.tile.ok{background:var(--good-soft);border-color:#CDE6DA}
 .tile.ok .v{color:var(--good)}
-.problem{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--ink);border-radius:0 18px 18px 0;padding:26px 28px}
+.problem{background:var(--bad-soft);border:1px solid #F3CFCF;border-left:6px solid var(--bad);border-radius:0 18px 18px 0;padding:26px 28px}
 .problem .lbl{color:var(--bad);font-weight:600}
 .problem h2{font-size:clamp(28px,4.4vw,48px);line-height:1.06;letter-spacing:-.01em;margin-top:10px}
 .problem p{font-size:17px;color:var(--ink-2);margin-top:12px;max-width:70ch}
@@ -123,14 +124,14 @@ button{font-family:inherit;cursor:pointer}
 .banner .big{font-family:var(--display);font-size:clamp(30px,4vw,44px);font-weight:600;letter-spacing:-.01em;line-height:1}
 .banner p{font-size:15px;color:var(--on-forest-2);max-width:62ch}
 .banner p b{color:var(--on-forest)}
-.strip{background:var(--navy-2);color:var(--on-navy);border-radius:12px;padding:14px 18px;font-size:14.5px}
-.strip b{color:#fff}
+.strip{background:var(--blue-soft);color:#1E3A8A;border:1px solid #D3E0FC;border-radius:12px;padding:14px 18px;font-size:14.5px}
+.strip b{color:#1E40AF}
 .call{border-radius:12px;padding:14px 18px;font-size:14.5px}
 .call.bad{background:var(--bad-soft)} .call.bad b{color:var(--bad)}
 .call.ok{background:var(--good-soft)} .call.ok b{color:var(--good)}
 
 /* summary cards to tabs */
-.jump{display:flex;flex-direction:column;gap:8px;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;color:var(--ink);min-width:0;transition:border-color .15s ease,transform .15s ease}
+.jump{display:flex;flex-direction:column;gap:8px;text-align:left;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--jc,var(--ink));border-radius:var(--r);padding:16px 18px;color:var(--ink);min-width:0;transition:border-color .15s ease,transform .15s ease}
 .jump:hover{border-color:var(--muted);transform:translateY(-1px)}
 .jump .t{font-weight:600;font-size:15px;display:flex;justify-content:space-between;gap:8px}
 .jump .t span{color:var(--muted);font-family:var(--mono);font-size:11px}
@@ -142,10 +143,10 @@ button{font-family:inherit;cursor:pointer}
 .br .tr{height:10px;background:var(--track);border-radius:6px;position:relative;overflow:hidden}
 .br .tr i{position:absolute;left:0;top:0;bottom:0;border-radius:6px;background:var(--grey)}
 .br .val{font-family:var(--mono);font-weight:600;text-align:right;font-size:13px}
-.br.s .tr i{background:var(--ink)} .br.w .tr i{background:var(--hatch);box-shadow:inset 0 0 0 1px var(--ink)}
+.br.s .tr i{background:var(--good)} .br.w .tr i{background:var(--bad)}
 .br.me span:first-child{font-weight:600}
 .br.me .tr i{background:var(--max)}
-.br.zero .tr{background:transparent;border:1.5px dashed var(--ink)}
+.br.zero .tr{background:transparent;border:1.5px dashed var(--bad)}
 .br.zero .val{color:var(--bad)}
 .legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--ink-2);margin-top:10px}
 .legend span{display:inline-flex;align-items:center;gap:7px}
@@ -166,9 +167,8 @@ button{font-family:inherit;cursor:pointer}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
 .chip{border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-family:var(--mono);font-size:13.5px;font-weight:600;background:var(--surface)}
 .chip small{display:block;font-family:var(--body);font-weight:400;font-size:11px;color:var(--muted)}
-.chip.warn{background:#0A0A0A;border-color:#0A0A0A;color:#fff}
-.chip.warn small{color:#A1A1AA}
-.chip.no{font-family:var(--body);font-weight:500;font-size:13px;background:var(--surface-2);border-color:transparent;color:var(--ink-2);padding:6px 12px}
+.chip.warn{background:var(--bad-soft);border-color:var(--bad);color:var(--bad)}
+.chip.no{font-family:var(--body);font-weight:500;font-size:13px;background:var(--bad-soft);border-color:transparent;color:var(--bad);padding:6px 12px}
 .chip.no::before{content:'✕ ';font-weight:700}
 
 /* columns chart */
@@ -181,8 +181,7 @@ button{font-family:inherit;cursor:pointer}
 .stack{display:flex;height:42px;border-radius:8px;overflow:hidden;gap:2px;margin-top:12px}
 .stack div{display:flex;align-items:center;padding-inline:12px;font-weight:600;font-size:13.5px;white-space:nowrap;overflow:hidden}
 .stack .a{background:var(--max);color:#fff}
-.stack .b{background:var(--hatch);color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
-.stack .b span{background:#fff;padding:2px 8px;border-radius:4px}
+.stack .b{background:var(--bad-soft);color:var(--bad)}
 
 /* competitors */
 .comp{display:flex;flex-direction:column;gap:8px}
@@ -230,7 +229,7 @@ button{font-family:inherit;cursor:pointer}
 .fam .pill.w{background:var(--senior-soft);color:var(--senior)}
 .fam small{display:block;font-size:12px;color:var(--muted)}
 .fam small em{font-style:normal;color:var(--good);font-weight:600}
-.doubt{color:var(--ink-2);font-style:italic;font-size:13px;text-align:left !important;white-space:nowrap}
+.doubt{color:var(--bad);font-size:13px;text-align:left !important;white-space:nowrap}
 .wd{display:inline-block;border-radius:50%;background:var(--family)}
 .wd.w2{width:18px;height:18px} .wd.w1{width:12px;height:12px;opacity:.55} .wd.w0{width:5px;height:5px;opacity:.35}
 .ages .r{margin-top:12px}
@@ -243,8 +242,8 @@ button{font-family:inherit;cursor:pointer}
 .ps{display:grid;grid-template-columns:52px minmax(0,1fr) 24px minmax(0,1fr) minmax(0,150px);gap:10px;align-items:center;padding:6px 0}
 .ps .nums{display:flex;gap:3px}
 .ps .nums i{width:22px;height:22px;border-radius:50%;color:#fff;font-style:normal;font-family:var(--mono);font-size:11px;display:flex;align-items:center;justify-content:center;font-weight:600}
-.ps .pain{background:var(--surface-2);border-radius:8px;padding:9px 12px;font-size:13.5px}
-.ps .str{background:var(--ink);color:#fff;border-radius:8px;padding:9px 12px;font-size:13.5px;font-weight:600}
+.ps .pain{background:var(--bad-soft);border-radius:8px;padding:9px 12px;font-size:13.5px}
+.ps .str{background:var(--good-soft);color:#0B5E45;border-radius:8px;padding:9px 12px;font-size:13.5px;font-weight:600}
 .ps .ar{color:var(--good);text-align:center}
 .ps .lim{font-size:12.5px;color:var(--muted)}
 .why{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;background:var(--hero);color:var(--on-forest);border-radius:var(--r);padding:16px 22px}
@@ -291,7 +290,7 @@ button{font-family:inherit;cursor:pointer}
 .fr{display:grid;grid-template-columns:minmax(0,120px) minmax(0,1fr) minmax(0,1fr);gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:13.5px}
 .fr .k{font-weight:600;color:var(--ink-2)}
 .fr .y::before{content:"✓ ";color:var(--good);font-weight:700}
-.fr .n{color:var(--muted)} .fr .n::before{content:"✕ ";font-weight:700}
+.fr .n{color:var(--bad)} .fr .n::before{content:"✕ ";font-weight:700}
 .fr.h{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .fr.h .y::before,.fr.h .n::before{content:""}
 .fr.h .n{color:var(--muted)}
@@ -318,20 +317,20 @@ button{font-family:inherit;cursor:pointer}
 .lives div:first-child{border-top:0}
 .lives b{font-size:14px;display:block}
 .lives span{font-size:12.5px;color:var(--muted)}
-.lives .me b{text-decoration:underline;text-underline-offset:3px}
+.lives .me b{color:var(--senior)}
 
 /* handle */
 .hz{background:var(--bad-soft);border-radius:12px;padding:14px 16px;display:grid;gap:4px}
 .hz b{font-size:14px}
 .hz .sc{font-family:var(--mono);font-size:12px;color:var(--muted)}
-.hz .fx{font-size:13.5px;color:var(--ink);font-weight:600}
+.hz .fx{font-size:13.5px;color:var(--good);font-weight:600}
 .hz .fx::before{content:'→ '}
 
 /* NRI */
 .cal{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:6px}
 .cal div{text-align:center}
 .cal .m{border-radius:8px;padding:9px 0;font-weight:600;font-size:13px;background:var(--surface-2);color:var(--muted)}
-.cal .m.h{background:var(--navy-2);color:var(--on-navy)} .cal .m.a{background:var(--senior);color:#fff} .cal .m.s{background:var(--p4);color:#fff}
+.cal .m.h{background:var(--family);color:#fff} .cal .m.a{background:var(--senior);color:#fff} .cal .m.s{background:var(--blue);color:#fff}
 .cal small{display:block;font-size:11px;color:var(--muted);margin-top:5px;min-height:15px}
 .br.dim{color:var(--muted)} .br.dim .tr i{background:var(--other)}
 
@@ -490,17 +489,17 @@ button{font-family:inherit;cursor:pointer}
             <div class="score-wrap" style="margin-top:8px">
               <div id="g-project"></div>
               <div><div class="bars" id="b-project"></div>
-                <div class="legend"><span><i style="background:var(--ink)"></i>≥ 4 strength</span><span><i style="background:var(--hatch);box-shadow:inset 0 0 0 1px var(--ink)"></i>≤ 2.5 weakness</span></div></div>
+                <div class="legend"><span><i style="background:var(--good)"></i>≥ 4 strength</span><span><i style="background:var(--bad)"></i>≤ 2.5 weakness</span></div></div>
             </div>
           </div>
           <div style="display:grid;gap:14px;min-width:0">
             <div class="card"><div class="lbl">Overall score by home</div><div class="g4" id="g-homes" style="margin-top:8px"></div></div>
             <div class="card"><div class="lbl">The land, in numbers</div>
               <div class="g2" style="margin-top:10px">
-                <div class="tile" style="background:var(--surface-2);border:0"><div class="v">76.7<small>homes / acre</small></div><p>Medium density</p></div>
-                <div class="tile" style="background:var(--surface-2);border:0"><div class="v">568<small>sq ft</small></div><p>Land per home</p></div>
-                <div class="tile" style="background:var(--surface-2);border:0"><div class="v">20%<small>of plot</small></div><p>Statutory green</p></div>
-                <div class="tile" style="background:var(--surface-2);border:0"><div class="v">₹1.13 L<small>/ sq ft</small></div><p>Of land, in the GDV</p></div>
+                <div class="tile" style="background:var(--good-soft);border:0"><div class="v">76.7<small>homes / acre</small></div><p>Medium density</p></div>
+                <div class="tile" style="background:var(--good-soft);border:0"><div class="v">568<small>sq ft</small></div><p>Land per home</p></div>
+                <div class="tile" style="background:var(--senior-soft);border:0"><div class="v">20%<small>of plot</small></div><p>Statutory green</p></div>
+                <div class="tile" style="background:var(--blue-soft);border:0"><div class="v">₹1.13 L<small>/ sq ft</small></div><p>Of land, in the GDV</p></div>
               </div></div>
           </div>
         </div>
@@ -561,7 +560,7 @@ button{font-family:inherit;cursor:pointer}
             <div class="legend" style="flex-direction:column;gap:6px">
               <span><i style="background:var(--senior)"></i><b class="mono">22</b>&nbsp;Senior living</span>
               <span><i style="background:var(--broker)"></i><b class="mono">4</b>&nbsp;Brokers</span>
-              <span><i style="background:#fff;box-shadow:inset 0 0 0 2px #0A0A0A"></i><b class="mono">1</b>&nbsp;Max Estates</span>
+              <span><i style="background:var(--max)"></i><b class="mono">1</b>&nbsp;Max Estates</span>
               <span><i style="background:var(--other)"></i><b class="mono">3</b>&nbsp;Unrelated</span>
             </div>
             <div class="call bad" style="margin-top:12px"><b>22 ads talk to the parent.</b> None to the child who pays.</div>
@@ -838,7 +837,8 @@ button{font-family:inherit;cursor:pointer}
     ['family','Family homes','3 & 4 BHK with staff rooms. They live better than they sell.'],
     ['antara','Antara homes & NRIs','Type B and Type A. The adult child decides, often from abroad. December–January is the window.'],
   ];
-  $('#jumps').innerHTML=jumps.map(([id,t,p])=>`<button class="jump" type="button" data-go="${id}"><span class="t">${t}<span>Open →</span></span><p>${p}</p></button>`).join('')
+  const jc={project:'var(--ink)',gaps:'var(--bad)',compete:'var(--blue)',buyers:'#9A6B12',family:'var(--family)',antara:'var(--senior)'};
+  $('#jumps').innerHTML=jumps.map(([id,t,p])=>`<button class="jump" type="button" data-go="${id}" style="--jc:${jc[id]}"><span class="t">${t}<span>Open →</span></span><p>${p}</p></button>`).join('')
 ;
   document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>show(b.dataset.go,true)));
 
@@ -852,7 +852,7 @@ button{font-family:inherit;cursor:pointer}
   $('#b-drive').innerHTML=drive.map(([k,m,c,n])=>`<div class="br"><span>${k}${n?` <span class="cap" style="display:inline">· ${n}</span>`:''}</span><div class="tr"><i style="width:${m/45*100}%;background:${css(c)}"></i></div><span class="val">${m} min</span></div>`).join('');
 
   /* ---------- gaps ---------- */
-  $('#waffle').innerHTML=[].concat(['max'],Array(4).fill('broker'),Array(22).fill('senior'),Array(3).fill('other')).map(c=>c==='max'?'<i style="background:#fff;box-shadow:inset 0 0 0 2.5px #0A0A0A"></i>':`<i style="background:${css(c)}"></i>`).join('');
+  $('#waffle').innerHTML=[].concat(['max'],Array(4).fill('broker'),Array(22).fill('senior'),Array(3).fill('other')).map(c=>`<i style="background:${css(c)}"></i>`).join('');
 
   /* ---------- price ladders ---------- */
   function ladder(el, dom, groups, mark, step){
@@ -947,8 +947,8 @@ button{font-family:inherit;cursor:pointer}
     let h=`<div class="inc">`+rows.map(([k,a,b])=>`<div class="ir"><div><b>${k}</b><small>₹${a}–${b} Cr a year</small></div><div class="itr">${seg(a,Math.min(b,t1),'x')}${seg(Math.max(a,t1),Math.min(b,t2),'a')}${seg(Math.max(a,t2),b,'g')}
       <span class="thr" style="left:${pct(t1)}%;border-color:var(--senior)"></span><span class="thr" style="left:${pct(t2)}%;border-color:var(--good)"></span></div></div>`).join('')+`</div>`;
     h+=`<div class="iaxis"><div></div><div class="ticks">${[0,1,2,3,4,5].map(v=>`<span style="left:${pct(v)}%;${v===5?'transform:translateX(-100%)':''}">₹${v} Cr</span>`).join('')}</div></div>`;
-    h+=`<div class="thl"><span style="color:var(--ink-2);font-weight:600">┊ ${l1} from ₹${t1} Cr</span><span style="color:var(--ink);font-weight:600">┊ ${l2} from ₹${t2} Cr</span></div>`;
-    h+=`<p class="cap" style="margin-top:6px"><b style="color:var(--ink)">Black</b> carries either home · <b style="color:var(--senior)">grey</b> the smaller one · light grey neither</p>`;
+    h+=`<div class="thl"><span style="color:var(--senior);font-weight:600">┊ ${l1} from ₹${t1} Cr</span><span style="color:var(--good);font-weight:600">┊ ${l2} from ₹${t2} Cr</span></div>`;
+    h+=`<p class="cap" style="margin-top:6px"><b style="color:var(--good)">Green</b> carries either home · <b style="color:var(--senior)">amber</b> the smaller one · grey neither</p>`;
     el.innerHTML=h;
   }
   income($('#inc-family'),[['IMT Manesar',1.5,5],['Medanta & Signature',1,4],['Udyog Vihar HQs',1.5,4],['Cyber City & GCER',1.5,5]],1.39,1.75,'3 BHK','4 BHK');
