@@ -1,0 +1,995 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Fixit project analysis: Estate 361 growth brief for the Max Estates promoter.">
+<title>Estate 361 Growth Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: Fixit black-and-white — white page, near-black ink, grey steps for every second series; strengths solid, weaknesses hatched. Serif headlines, Inter body. One centred column, tabbed dashboard. */
+:root{
+  color-scheme:light;
+  --bg:#FFFFFF; --surface:#FFFFFF; --surface-2:#F4F4F5; --line:#E4E4E7; --track:#EDEDEF;
+  --ink:#0A0A0A; --ink-2:#3F3F46; --muted:#71717A; --head:#0A0A0A;
+  --brand:#0A0A0A; --brand-strong:#0A0A0A; --brand-soft:#F4F4F5; --cyan:#0A0A0A;
+  --navy:#0A0A0A; --navy-2:#18181B; --on-navy:#FFFFFF; --on-navy-2:#A1A1AA;
+  --hero:#0A0A0A;
+  --forest:#0A0A0A; --on-forest:#FFFFFF; --on-forest-2:#A1A1AA;
+  --family:#0A0A0A; --family-soft:#F4F4F5; --senior:#6E6E73; --senior-soft:#F4F4F5;
+  --good:#0A0A0A; --good-soft:#F4F4F5; --bad:#0A0A0A; --bad-soft:#F4F4F5;
+  --max:#0A0A0A; --broker:#3F3F46; --other:#E4E4E7; --grey:#C7C7CC; --tab-on:#0A0A0A;
+  --hatch:repeating-linear-gradient(135deg,#0A0A0A 0 2px,#FFFFFF 2px 5px);
+  --p1:#0A0A0A; --p2:#27272A; --p3:#3F3F46; --p4:#52525B; --p5:#636369; --p6:#75757B;
+  --display:'Playfair Display',Georgia,'Times New Roman',serif;
+  --body:'Inter',-apple-system,'Segoe UI',Roboto,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
+  --r:14px;
+}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:0 56px}
+h1,h2,h3{font-family:var(--display);color:var(--head);font-weight:600;letter-spacing:-.01em;text-wrap:balance;margin:0}
+p{margin:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.lbl{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--max);outline-offset:2px;border-radius:6px}
+
+/* top bar */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:16px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .logo{width:32px;height:32px;border-radius:8px;background:var(--navy);display:flex;align-items:center;justify-content:center;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
+.brand .logo svg{width:18px;height:18px;fill:none;stroke:#fff;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.brand b{font-family:var(--body);font-size:21px;font-weight:800;letter-spacing:-.02em;color:var(--head)}
+.brand span{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-left:10px;border-left:1px solid var(--line)}
+.top .meta{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:right}
+
+/* landing */
+.land{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:40px;padding-block:56px 24px;align-items:start}
+.land h1{font-size:clamp(34px,5vw,54px);line-height:1.05}
+.land .lede{font-size:17px;color:var(--ink-2);margin-top:16px;max-width:52ch}
+.gets{margin-top:28px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 18px}
+.gets div{display:flex;gap:10px;align-items:baseline;font-size:14px;color:var(--ink-2);padding-block:6px;border-top:1px solid var(--line)}
+.gets b{font-family:var(--mono);font-size:11px;color:var(--muted);font-weight:600;min-width:20px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 1px 2px rgba(20,30,25,.05)}
+.cover{border-radius:12px;background:var(--hero);color:var(--on-forest);padding:24px 22px;position:relative;overflow:hidden}
+.cover .k{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--on-forest-2)}
+.cover .n{font-family:var(--display);font-size:40px;font-weight:600;letter-spacing:-.01em;line-height:1;margin-top:14px}
+.cover .d{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;margin-top:12px;color:var(--on-forest-2)}
+.cover svg{position:absolute;right:-20px;bottom:-30px;opacity:.16}
+.pmeta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px}
+.pmeta div{background:var(--surface-2);border-radius:10px;padding:10px 12px}
+.pmeta b{display:block;font-family:var(--display);font-size:20px;font-weight:600;color:var(--head)}
+.pmeta span{font-size:12px;color:var(--muted)}
+.srcs{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.srcs span{font-size:11.5px;padding:4px 9px;border-radius:999px;border:1px solid var(--line);color:var(--ink-2)}
+.go{margin-top:20px;width:100%;display:flex;align-items:center;justify-content:center;gap:10px;padding:16px 18px;border:0;border-radius:12px;background:var(--brand-strong);color:#fff;font-size:16px;font-weight:600;transition:transform .15s ease,filter .15s ease}
+.go:hover{filter:brightness(1.12)} .go:active{transform:translateY(1px)}
+.go[disabled]{opacity:.7;cursor:progress}
+.steps{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:8px}
+.steps li{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--muted)}
+.steps .dot{width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:11px;border:1.5px solid var(--line);flex:0 0 22px}
+.steps li.run{color:var(--ink)} .steps li.run .dot{border-color:var(--brand);border-top-color:transparent;animation:spin .8s linear infinite}
+.steps li.done{color:var(--ink)} .steps li.done .dot{background:var(--brand-strong);border-color:var(--brand-strong);color:#fff}
+@keyframes spin{to{transform:rotate(360deg)}}
+.note-sm{font-size:12px;color:var(--muted);margin-top:12px}
+
+/* dashboard header + tabs */
+.dhead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:14px;padding-block:28px 18px}
+.dhead h1{font-size:clamp(28px,4vw,40px)}
+.dhead .sub{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.ghost{background:transparent;border:1px solid var(--line);color:var(--ink-2);border-radius:999px;padding:8px 14px;font-size:13px}
+.ghost:hover{border-color:var(--muted)}
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);margin-inline:-20px;padding-inline:20px}
+.tabs .row{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding-block:8px}
+.tabs .row::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;border:0;background:transparent;color:var(--muted);padding:9px 14px;border-radius:999px;font-size:14px;font-weight:500;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.tab .n{font-family:var(--mono);font-size:11px;opacity:.75}
+.tab:hover{color:var(--ink);background:var(--surface-2)}
+.tab[aria-selected="true"]{background:var(--tab-on);color:#fff}
+.panel{padding-block:28px 0;display:grid;gap:22px}
+.sec{display:grid;gap:14px}
+.sec > h2{font-size:clamp(24px,3.2vw,34px);line-height:1.1}
+.tag{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:4px 9px;border-radius:5px;background:var(--navy);color:var(--on-navy);width:max-content}
+.tag.bad{background:var(--bad);color:#fff} .tag.c{background:var(--cyan);color:#fff} .tag.d{background:var(--brand-strong);color:#fff}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;min-width:0}
+.card h3{font-family:var(--body);font-size:15.5px;font-weight:600;color:var(--ink)}
+.card .cap{font-size:12.5px;color:var(--muted);margin-top:2px}
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.g5{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.src{font-size:11.5px;color:var(--muted);line-height:1.45;border-top:1px solid var(--line);padding-top:12px}
+
+/* tiles */
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;min-width:0}
+.tile .v{font-family:var(--display);font-size:clamp(26px,3vw,36px);font-weight:600;letter-spacing:-.01em;line-height:1;color:var(--head)}
+.tile .v small{font-size:.5em;color:var(--muted);font-family:var(--body);font-weight:500;margin-left:3px}
+.tile p{font-size:13px;color:var(--ink-2);margin-top:8px}
+.tile.bad{border-top:3px solid var(--bad)}
+.tile.ok{background:var(--good-soft);border-color:transparent}
+.tile.ok .v{color:var(--good)}
+.problem{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--ink);border-radius:0 18px 18px 0;padding:26px 28px}
+.problem .lbl{color:var(--bad);font-weight:600}
+.problem h2{font-size:clamp(28px,4.4vw,48px);line-height:1.06;letter-spacing:-.01em;margin-top:10px}
+.problem p{font-size:17px;color:var(--ink-2);margin-top:12px;max-width:70ch}
+.problem p b{color:var(--ink)}
+.banner{background:var(--hero);color:var(--on-forest);border-radius:var(--r);padding:20px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 24px}
+.banner .big{font-family:var(--display);font-size:clamp(30px,4vw,44px);font-weight:600;letter-spacing:-.01em;line-height:1}
+.banner p{font-size:15px;color:var(--on-forest-2);max-width:62ch}
+.banner p b{color:var(--on-forest)}
+.strip{background:var(--navy-2);color:var(--on-navy);border-radius:12px;padding:14px 18px;font-size:14.5px}
+.strip b{color:#fff}
+.call{border-radius:12px;padding:14px 18px;font-size:14.5px}
+.call.bad{background:var(--bad-soft)} .call.bad b{color:var(--bad)}
+.call.ok{background:var(--good-soft)} .call.ok b{color:var(--good)}
+
+/* summary cards to tabs */
+.jump{display:flex;flex-direction:column;gap:8px;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;color:var(--ink);min-width:0;transition:border-color .15s ease,transform .15s ease}
+.jump:hover{border-color:var(--muted);transform:translateY(-1px)}
+.jump .t{font-weight:600;font-size:15px;display:flex;justify-content:space-between;gap:8px}
+.jump .t span{color:var(--muted);font-family:var(--mono);font-size:11px}
+.jump p{font-size:13.5px;color:var(--ink-2)}
+
+/* bars */
+.bars{display:grid;gap:9px;margin-top:12px}
+.br{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr) 54px;gap:12px;align-items:center;font-size:13.5px}
+.br .tr{height:10px;background:var(--track);border-radius:6px;position:relative;overflow:hidden}
+.br .tr i{position:absolute;left:0;top:0;bottom:0;border-radius:6px;background:var(--grey)}
+.br .val{font-family:var(--mono);font-weight:600;text-align:right;font-size:13px}
+.br.s .tr i{background:var(--ink)} .br.w .tr i{background:var(--hatch);box-shadow:inset 0 0 0 1px var(--ink)}
+.br.me span:first-child{font-weight:600}
+.br.me .tr i{background:var(--max)}
+.br.zero .tr{background:transparent;border:1.5px dashed var(--ink)}
+.br.zero .val{color:var(--bad)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--ink-2);margin-top:10px}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
+
+/* gauges */
+.gauge{display:flex;flex-direction:column;align-items:center;gap:2px;min-width:0}
+.gauge svg{width:100%;max-width:150px;height:auto}
+.gauge .gl{font-size:12.5px;color:var(--muted)}
+.gauge text{font-family:var(--body)}
+.score-wrap{display:grid;grid-template-columns:170px minmax(0,1fr);gap:20px;align-items:center}
+
+/* waffle */
+.waffle{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;max-width:270px;margin-top:14px}
+.waffle i{aspect-ratio:1/1;border-radius:6px;display:block;max-width:100%}
+
+/* chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-family:var(--mono);font-size:13.5px;font-weight:600;background:var(--surface)}
+.chip small{display:block;font-family:var(--body);font-weight:400;font-size:11px;color:var(--muted)}
+.chip.warn{background:#0A0A0A;border-color:#0A0A0A;color:#fff}
+.chip.warn small{color:#A1A1AA}
+.chip.no{font-family:var(--body);font-weight:500;font-size:13px;background:var(--surface-2);border-color:transparent;color:var(--ink-2);padding:6px 12px}
+.chip.no::before{content:'✕ ';font-weight:700}
+
+/* columns chart */
+.cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:end;height:200px;margin-top:16px}
+.col{display:flex;flex-direction:column;justify-content:flex-end;align-items:stretch;height:100%;text-align:center}
+.col .bar{background:var(--family);border-radius:6px 6px 0 0;opacity:.6}
+.col.first .bar{opacity:1}
+.col .num{font-family:var(--mono);font-weight:600;font-size:13px;margin-bottom:6px}
+.col .x{font-size:12px;color:var(--muted);margin-top:6px}
+.stack{display:flex;height:42px;border-radius:8px;overflow:hidden;gap:2px;margin-top:12px}
+.stack div{display:flex;align-items:center;padding-inline:12px;font-weight:600;font-size:13.5px;white-space:nowrap;overflow:hidden}
+.stack .a{background:var(--max);color:#fff}
+.stack .b{background:var(--hatch);color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.stack .b span{background:#fff;padding:2px 8px;border-radius:4px}
+
+/* competitors */
+.comp{display:flex;flex-direction:column;gap:8px}
+.comp .who{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.comp .who b{font-size:14px}
+.comp .who span{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:right}
+.comp h4{margin:0;font-family:var(--display);font-size:20px;font-weight:600;color:var(--head);line-height:1.15}
+.comp .pf{font-family:var(--mono);font-size:13.5px;font-weight:600;line-height:1.45}
+.comp .pf small{display:block;font-family:var(--body);font-weight:400;font-size:11px;color:var(--muted)}
+.comp .gap{margin-top:auto;padding-top:10px;border-top:1px dashed var(--line);font-size:13.5px}
+.comp .gap b{font-family:var(--mono);font-size:10.5px;color:var(--bad);letter-spacing:.06em;margin-right:6px}
+.comp .gap b.l{color:var(--senior)}
+
+/* range ladder */
+.ladder{position:relative;margin-top:8px}
+.lrow{display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr);gap:16px;padding:12px 0;border-top:1px solid var(--line)}
+.lrow:first-child{border-top:0}
+.lrow .g b{display:block;font-size:14px}
+.lrow .g span{font-size:12px;color:var(--muted)}
+.lt{position:relative;min-height:26px}
+.it{position:relative;height:24px}
+.it .m{position:absolute;top:8px;height:8px;border-radius:5px}
+.it .m.dot{width:12px;height:12px;top:6px;border-radius:50%;transform:translateX(-6px)}
+.it .t{position:absolute;top:1px;font-size:12px;white-space:nowrap;color:var(--ink-2);background:var(--surface);padding:0 4px;border-radius:4px;z-index:2}
+.it .m{z-index:2}
+.it .t b{color:var(--ink);font-weight:600}
+.axisx{display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr);gap:16px;margin-top:4px}
+.axisx .ticks{position:relative;height:18px;font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.axisx .ticks span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+.e361{position:absolute;top:0;bottom:0;width:2px;background:var(--head);pointer-events:none;z-index:1}
+.e361 span{position:absolute;top:-24px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:11.5px;font-weight:600;background:var(--navy);color:var(--on-navy);padding:3px 9px;border-radius:999px}
+.ladder-wrap{overflow-x:auto;padding-top:26px}
+.ladder-inner{min-width:620px}
+
+/* families matrix */
+.mx{width:100%;border-collapse:collapse;min-width:720px}
+.mx th{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500;padding:0 6px 8px;text-align:center}
+.mx th:first-child,.mx th:nth-child(2){text-align:left}
+.mx td{padding:10px 6px;border-top:1px solid var(--line);vertical-align:middle;text-align:center}
+.mx td:first-child{text-align:left}
+.fam{display:flex;gap:10px;align-items:center}
+.fam .ic{width:30px;height:30px;border-radius:50%;flex:0 0 30px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--mono);font-size:12px;font-weight:600}
+.fam b{font-size:14px}
+.fam .pill{font-size:10.5px;padding:2px 7px;border-radius:999px;background:var(--good-soft);color:var(--good);margin-left:6px;font-weight:600}
+.fam .pill.w{background:var(--senior-soft);color:var(--senior)}
+.fam small{display:block;font-size:12px;color:var(--muted)}
+.fam small em{font-style:normal;color:var(--good);font-weight:600}
+.doubt{color:var(--ink-2);font-style:italic;font-size:13px;text-align:left !important;white-space:nowrap}
+.wd{display:inline-block;border-radius:50%;background:var(--family)}
+.wd.w2{width:18px;height:18px} .wd.w1{width:12px;height:12px;opacity:.55} .wd.w0{width:5px;height:5px;opacity:.35}
+.ages .r{margin-top:12px}
+.ages .r b{font-size:14px}
+.ages .ln{display:flex;align-items:center;gap:8px;margin-top:5px}
+.ages .ln i{height:10px;border-radius:6px;display:block}
+.ages .ln span{font-family:var(--mono);font-size:12.5px;font-weight:600}
+
+/* pain → strength */
+.ps{display:grid;grid-template-columns:52px minmax(0,1fr) 24px minmax(0,1fr) minmax(0,150px);gap:10px;align-items:center;padding:6px 0}
+.ps .nums{display:flex;gap:3px}
+.ps .nums i{width:22px;height:22px;border-radius:50%;color:#fff;font-style:normal;font-family:var(--mono);font-size:11px;display:flex;align-items:center;justify-content:center;font-weight:600}
+.ps .pain{background:var(--surface-2);border-radius:8px;padding:9px 12px;font-size:13.5px}
+.ps .str{background:var(--ink);color:#fff;border-radius:8px;padding:9px 12px;font-size:13.5px;font-weight:600}
+.ps .ar{color:var(--good);text-align:center}
+.ps .lim{font-size:12.5px;color:var(--muted)}
+.why{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;background:var(--hero);color:var(--on-forest);border-radius:var(--r);padding:16px 22px}
+.why .lbl{color:var(--on-forest-2)}
+.why b{font-family:var(--display);font-weight:500;font-size:20px}
+.why small{font-size:12px;color:var(--on-forest-2)}
+
+/* compare table */
+.cmp{width:100%;border-collapse:separate;border-spacing:0 6px}
+.cmp th{padding:10px 14px;text-align:left;color:#fff;font-size:14.5px}
+.cmp th.f{background:var(--family);border-radius:10px 10px 0 0}
+.cmp th.s{background:var(--senior);border-radius:10px 10px 0 0}
+.cmp td{background:var(--surface);padding:10px 14px;font-size:14px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cmp td:first-child{font-weight:600;border-left:1px solid var(--line);border-radius:10px 0 0 10px;color:var(--ink-2);width:150px}
+.cmp td:last-child{border-right:1px solid var(--line);border-radius:0 10px 10px 0}
+.cmp td.f{box-shadow:inset 3px 0 0 var(--family)} .cmp td.s{box-shadow:inset 3px 0 0 var(--senior)}
+
+/* plans */
+.plan h3{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.plan h3 span{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--ink-2)}
+.area{display:flex;height:30px;border-radius:7px;overflow:hidden;gap:2px;margin-top:12px}
+.area div{display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:11.5px;font-weight:600;white-space:nowrap;overflow:hidden}
+.area .c{color:#fff} .area .b{background:var(--surface-2);color:var(--ink-2)} .area .w{background:var(--track)} .area .o{background:var(--surface-2);color:var(--muted)}
+.akey{display:flex;gap:14px;font-size:11.5px;color:var(--muted);margin-top:6px;flex-wrap:wrap}
+.akey span{display:inline-flex;align-items:center;gap:5px}
+.akey i{width:9px;height:9px;border-radius:2px;display:inline-block}
+.plan .eff{display:flex;justify-content:space-between;gap:10px;margin-top:10px;font-size:13.5px;color:var(--ink-2)}
+.plan .eff b{font-family:var(--mono)}
+.feat{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,180px);gap:12px;align-items:center;padding:11px 0;border-top:1px solid var(--line)}
+.feat:first-of-type{border-top:0}
+.feat b{font-size:14px;display:block}
+.feat .rt{display:flex;align-items:center;gap:8px;margin-top:5px}
+.feat .rt i{display:block;height:6px;border-radius:4px;width:110px;background:var(--track);position:relative;overflow:hidden}
+.feat .rt i em{position:absolute;inset:0 auto 0 0;border-radius:4px}
+.feat .rt span{font-family:var(--mono);font-size:12px;font-weight:600}
+.feat .who{font-size:12.5px;color:var(--ink-2);background:var(--surface-2);border-radius:8px;padding:6px 10px}
+.colhead{border-radius:10px;padding:10px 14px;color:#fff;font-weight:600;font-size:14.5px}
+
+/* fits */
+.fit .hd{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.fit .hd .pr{font-family:var(--display);font-size:28px;font-weight:600;letter-spacing:-.01em;color:var(--head);line-height:1}
+.fit .hd .pr small{font-family:var(--body);font-size:12px;color:var(--muted);font-weight:400}
+.fit .hd p{font-size:12.5px;color:var(--muted);margin-top:4px}
+.fr{display:grid;grid-template-columns:minmax(0,120px) minmax(0,1fr) minmax(0,1fr);gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.fr .k{font-weight:600;color:var(--ink-2)}
+.fr .y::before{content:"✓ ";color:var(--good);font-weight:700}
+.fr .n{color:var(--muted)} .fr .n::before{content:"✕ ";font-weight:700}
+.fr.h{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.fr.h .y::before,.fr.h .n::before{content:""}
+.fr.h .n{color:var(--muted)}
+.q4{display:grid;grid-template-columns:minmax(0,140px) repeat(4,minmax(0,1fr));gap:10px;align-items:center;background:var(--hero);border-radius:var(--r);padding:14px}
+.q4 > b{color:var(--on-forest);font-size:14px}
+.q4 div{background:rgba(255,255,255,.1);border-radius:10px;padding:10px 12px;color:var(--on-forest);font-size:13.5px;display:flex;gap:9px;align-items:center}
+.q4 div i{font-style:normal;width:22px;height:22px;flex:0 0 22px;border-radius:50%;background:#fff;color:#0A0A0A;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:11px;font-weight:700}
+
+/* income */
+.inc{display:grid;gap:14px;margin-top:10px}
+.ir{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr);gap:14px;align-items:center}
+.ir b{font-size:14px;display:block}
+.ir small{font-size:12px;color:var(--muted)}
+.itr{position:relative;height:22px;background:transparent}
+.itr .seg{position:absolute;top:0;bottom:0}
+.itr .seg.g{background:var(--good)} .itr .seg.a{background:var(--senior)} .itr .seg.x{background:var(--other)}
+.thr{position:absolute;top:-6px;bottom:-6px;border-left:1.5px dashed}
+.iaxis{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr);gap:14px}
+.iaxis .ticks{position:relative;height:30px;font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.iaxis .ticks span{position:absolute;transform:translateX(-50%);top:4px;white-space:nowrap}
+.thl{font-size:12px;margin-top:4px;display:flex;flex-wrap:wrap;gap:4px 16px}
+.lives{display:grid;gap:0}
+.lives div{padding:10px 0;border-top:1px solid var(--line)}
+.lives div:first-child{border-top:0}
+.lives b{font-size:14px;display:block}
+.lives span{font-size:12.5px;color:var(--muted)}
+.lives .me b{text-decoration:underline;text-underline-offset:3px}
+
+/* handle */
+.hz{background:var(--bad-soft);border-radius:12px;padding:14px 16px;display:grid;gap:4px}
+.hz b{font-size:14px}
+.hz .sc{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.hz .fx{font-size:13.5px;color:var(--ink);font-weight:600}
+.hz .fx::before{content:'→ '}
+
+/* NRI */
+.cal{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:6px}
+.cal div{text-align:center}
+.cal .m{border-radius:8px;padding:9px 0;font-weight:600;font-size:13px;background:var(--surface-2);color:var(--muted)}
+.cal .m.h{background:var(--navy-2);color:var(--on-navy)} .cal .m.a{background:var(--senior);color:#fff} .cal .m.s{background:var(--p4);color:#fff}
+.cal small{display:block;font-size:11px;color:var(--muted);margin-top:5px;min-height:15px}
+.br.dim{color:var(--muted)} .br.dim .tr i{background:var(--other)}
+
+@media (max-width:900px){
+  .land{grid-template-columns:1fr;gap:28px;padding-block:32px 16px}
+  .g4,.g5{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .g3{grid-template-columns:1fr}
+  .q4{grid-template-columns:1fr 1fr}
+  .q4 > b{grid-column:1 / -1}
+  .ps{grid-template-columns:52px minmax(0,1fr);}
+  .ps .ar{display:none}
+  .ps .str{grid-column:2}
+  .ps .lim{grid-column:2;padding-left:4px}
+  .cal{grid-template-columns:repeat(5,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  .g2{grid-template-columns:1fr}
+  .gets{grid-template-columns:1fr}
+  .pmeta{grid-template-columns:1fr 1fr 1fr}
+  .score-wrap{grid-template-columns:1fr}
+  .br{grid-template-columns:minmax(0,120px) minmax(0,1fr) 48px}
+  .fr{grid-template-columns:minmax(0,88px) minmax(0,1fr) minmax(0,1fr);font-size:12.5px}
+  .ir,.iaxis{grid-template-columns:1fr}
+  .iaxis > div:first-child{display:none}
+  .feat{grid-template-columns:1fr}
+  .cmp td:first-child{width:96px}
+  .top .meta{display:none}
+  .ladder-inner{min-width:0}
+  .lrow,.axisx{grid-template-columns:1fr;gap:6px}
+  .axisx > div:first-child{display:none}
+  .it{height:auto;min-height:36px;padding-top:20px;margin-bottom:6px}
+  .it .t{top:0;left:0 !important;right:auto !important;padding-left:0;background:transparent}
+  .it .m{top:auto;bottom:0} .it .m.dot{top:auto;bottom:-2px}
+  .lt{padding-bottom:2px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important}}
+</style>
+<style>html,body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span><b>Fixit</b><span>Project analysis</span></div>
+    <div class="meta">Growth brief for the promoter · October 2026 · Confidential</div>
+  </header>
+
+  <!-- LANDING -->
+  <section id="landing" class="land">
+    <div>
+      <div class="lbl">Fixit · Project analysis</div>
+      <h1 style="margin-top:14px">One project. The full picture.</h1>
+      <p class="lede">Fixit reads the brochure, the RERA record, company filings and every live ad around a project. Then it shows what is working, what isn't, and who will buy.</p>
+      <div class="gets">
+        <div><b>01</b>Summary for the promoter</div>
+        <div><b>02</b>The project and how it scores</div>
+        <div><b>03</b>What isn't working</div>
+        <div><b>04</b>Competitors and price</div>
+        <div><b>05</b>The buyers</div>
+        <div><b>06</b>Family homes</div>
+        <div><b>07</b>Antara homes</div>
+        <div><b>08</b>The NRI wave</div>
+      </div>
+    </div>
+    <div class="proj">
+      <div class="cover">
+        <div class="k">SECTOR 36A · DWARKA EXPRESSWAY · GURUGRAM</div>
+        <div class="n">Estate 361</div>
+        <div class="d">MAX ESTATES · 3 &amp; 4 BHK · THE TERRACES · SENIOR LIVING</div>
+        <svg width="190" height="190" viewBox="0 0 190 190" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="95" cy="95" r="90"/><circle cx="95" cy="95" r="62"/><circle cx="95" cy="95" r="34"/><path d="M5 140 L185 40"/><path d="M70 5 L120 185"/></g></svg>
+      </div>
+      <div class="pmeta">
+        <div><b>18.23</b><span>acres</span></div>
+        <div><b>₹9,000 Cr</b><span>overall GDV</span></div>
+        <div><b>Sep 2033</b><span>RERA completion</span></div>
+      </div>
+      <div class="srcs" aria-label="Sources read"><span>Brochure</span><span>HARERA</span><span>Company filings</span><span>Meta Ad Library</span><span>Google Ads Transparency</span><span>Instagram</span><span>Listing portals</span></div>
+      <button class="go" id="go" type="button">Analyse Estate 361 <span aria-hidden="true">→</span></button>
+      <ol class="steps" id="steps" hidden>
+        <li><span class="dot">1</span>Reading the Estate 361 brochure and unit plans</li>
+        <li><span class="dot">2</span>Checking HARERA and Max Estates filings</li>
+        <li><span class="dot">3</span>Scanning live ads on Meta and Google</li>
+        <li><span class="dot">4</span>Comparing prices across the corridor</li>
+        <li><span class="dot">5</span>Splitting buyers: family homes and Antara homes</li>
+      </ol>
+      <p class="note-sm">Analysis as of 12 October 2026. Takes a few seconds.</p>
+    </div>
+  </section>
+
+  <!-- DASHBOARD -->
+  <section id="dash" hidden>
+    <div class="dhead">
+      <div>
+        <div class="sub">Max Estates · Estate 361 · Sector 36A, Gurugram</div>
+        <h1>Growth brief for the promoter</h1>
+      </div>
+      <button class="ghost" id="restart" type="button">Start over</button>
+    </div>
+    <nav class="tabs" aria-label="Brief sections"><div class="row" role="tablist" id="tablist"></div></nav>
+
+    <!-- 1 SUMMARY -->
+    <div class="panel" role="tabpanel" id="p-summary" data-tab="summary" data-name="Summary">
+      <div class="problem">
+        <div class="lbl">The biggest problem</div>
+        <h2>Not one Max Estates ad asks a family to buy an Estate&nbsp;361&nbsp;home.</h2>
+        <p>The only ads that do are brokers', each quoting different prices and payment plans. <b>Max has handed the buyer's first conversation to someone else.</b></p>
+      </div>
+      <div class="g4">
+        <div class="tile bad"><div class="v">~₹5,550<small>Cr</small></div><p>still to sell, including phases not yet launched</p></div>
+        <div class="tile bad"><div class="v">0<small>of 12</small></div><p>Max's own live ads that sell a family home</p></div>
+        <div class="tile bad"><div class="v">44 : 1</div><p>Google ads on your name in 30 days: one broker vs Max</p></div>
+        <div class="tile bad"><div class="v">~30×</div><p>Krisumi's Instagram engagement vs Max, same followers</p></div>
+      </div>
+      <div class="sec">
+        <div class="lbl" style="color:var(--good)">Working · protect it</div>
+        <div class="g4">
+          <div class="tile ok"><div class="v">₹4,831 Cr</div><p>Estate 360, ~100% sold</p></div>
+          <div class="tile ok"><div class="v">68%</div><p>of Phase 1 sold in ~4 months</p></div>
+          <div class="tile ok"><div class="v">₹962 Cr</div><p>booked in Jul–Sep 2026</p></div>
+          <div class="tile ok"><div class="v">Sold out</div><p>The Terraces, Phase 1</p></div>
+        </div>
+      </div>
+      <div class="sec">
+        <div class="lbl">Read the brief</div>
+        <div class="g3" id="jumps"></div>
+      </div>
+      <p class="src">Max Estates FY26 results (BSE, 23 May 2026), Q1 FY27 release (Aug 2026) and exchange filing (6 Oct 2026). Fixit scan, 12 Oct 2026: Meta Ad Library (India, live ads), Google Ads Transparency Centre (30 days), Instagram median likes on the last 12 posts. ₹5,550 Cr = ₹9,000 Cr GDV − ₹3,451 Cr booked.</p>
+    </div>
+
+    <!-- 2 PROJECT -->
+    <div class="panel" role="tabpanel" id="p-project" data-tab="project" data-name="The project" hidden>
+      <div class="sec">
+        <span class="tag">A · We know your project</span>
+        <h2>One estate, three homes.</h2>
+        <div class="g5">
+          <div class="tile"><div class="v">18.23<small>acres</small></div><p>One contiguous estate</p></div>
+          <div class="tile"><div class="v">₹9,000<small>Cr</small></div><p>Overall GDV</p></div>
+          <div class="tile"><div class="v">1,096<small>homes</small></div><p>Registered phase</p></div>
+          <div class="tile"><div class="v">Sep 2033</div><p>RERA completion</p></div>
+          <div class="tile"><div class="v">~₹22,000</div><p>Avg realisation per sq ft</p></div>
+        </div>
+        <div class="g3">
+          <div class="card" style="border-top:4px solid var(--grey)"><h3 style="font-family:var(--display);font-size:21px;font-weight:600;color:var(--head)">The Terraces</h3><p style="font-weight:600;margin-top:4px">1.5 &amp; 2 BHK</p><p class="cap">From ₹2.4 Cr · Phase 1 sold out</p></div>
+          <div class="card" style="border-top:4px solid var(--family)"><h3 style="font-family:var(--display);font-size:21px;font-weight:600;color:var(--head)">Family residences</h3><p style="font-weight:600;margin-top:4px">3 &amp; 4 BHK</p><p class="cap">4 homes a floor</p></div>
+          <div class="card" style="border-top:4px solid var(--senior)"><h3 style="font-family:var(--display);font-size:21px;font-weight:600;color:var(--head)">Antara residences</h3><p style="font-weight:600;margin-top:4px">Senior living</p><p class="cap">Run by Antara</p></div>
+        </div>
+        <div class="banner"><div class="big">₹7,565 Cr</div><p>of Max homes already sold next door: <b>Estate 360</b> ₹4,831 Cr and <b>Estate 128</b> ₹2,734 Cr. Your warmest buyers.</p></div>
+      </div>
+
+      <div class="sec">
+        <h2>How the estate scores.</h2>
+        <div class="g2">
+          <div class="card">
+            <div class="lbl">Project block</div>
+            <div class="score-wrap" style="margin-top:8px">
+              <div id="g-project"></div>
+              <div><div class="bars" id="b-project"></div>
+                <div class="legend"><span><i style="background:var(--ink)"></i>≥ 4 strength</span><span><i style="background:var(--hatch);box-shadow:inset 0 0 0 1px var(--ink)"></i>≤ 2.5 weakness</span></div></div>
+            </div>
+          </div>
+          <div style="display:grid;gap:14px;min-width:0">
+            <div class="card"><div class="lbl">Overall score by home</div><div class="g4" id="g-homes" style="margin-top:8px"></div></div>
+            <div class="card"><div class="lbl">The land, in numbers</div>
+              <div class="g2" style="margin-top:10px">
+                <div class="tile" style="background:var(--surface-2);border:0"><div class="v">76.7<small>homes / acre</small></div><p>Medium density</p></div>
+                <div class="tile" style="background:var(--surface-2);border:0"><div class="v">568<small>sq ft</small></div><p>Land per home</p></div>
+                <div class="tile" style="background:var(--surface-2);border:0"><div class="v">20%<small>of plot</small></div><p>Statutory green</p></div>
+                <div class="tile" style="background:var(--surface-2);border:0"><div class="v">₹1.13 L<small>/ sq ft</small></div><p>Of land, in the GDV</p></div>
+              </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec">
+        <h2>Where it sits.</h2>
+        <div class="g2">
+          <div class="card">
+            <div class="lbl">Drive times, per Max's brochure</div>
+            <div class="bars" id="b-drive"></div>
+            <div class="legend"><span><i style="background:var(--good)"></i>Strong</span><span><i style="background:var(--senior)"></i>Moderate</span><span><i style="background:var(--other)"></i>Planned, not built</span></div>
+          </div>
+          <div class="card">
+            <div class="lbl">Neighbourhood block</div>
+            <div class="score-wrap" style="margin-top:8px"><div id="g-hood"></div><div class="bars" id="b-hood"></div></div>
+            <p class="cap" style="margin-top:10px">Weighted for a senior, it scores 5.5. See the Antara homes tab.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec">
+        <h2>The launch machine works. Year two needs a new one.</h2>
+        <div class="g2">
+          <div class="card">
+            <div class="lbl">Estate 361 bookings</div>
+            <div class="cols">
+              <div class="col first"><div class="num">₹1,704 Cr</div><div class="bar" style="height:100%"></div><div class="x">Launch · Dec–Mar</div></div>
+              <div class="col"><div class="num">₹785 Cr</div><div class="bar" style="height:46%"></div><div class="x">Apr–Jun</div></div>
+              <div class="col"><div class="num">₹962 Cr</div><div class="bar" style="height:56.5%"></div><div class="x">Jul–Sep</div></div>
+            </div>
+          </div>
+          <div class="card" style="display:grid;gap:14px">
+            <div><div class="lbl" style="color:var(--bad)">At stake</div>
+              <div class="stack"><div class="a" style="flex:0 0 38.3%">₹3,451 Cr booked</div><div class="b" style="flex:1"><span>~₹5,550 Cr to sell</span></div></div>
+              <div class="legend" style="justify-content:space-between"><span>To 30 Sep 2026</span><span>₹9,000 Cr GDV · includes phases not yet launched</span></div></div>
+            <div class="g2">
+              <div class="tile"><div class="v" style="color:var(--bad)">−39%</div><p>₹5–10 Cr home sales in NCR, 2026</p></div>
+              <div class="tile"><div class="v">6+ qtrs</div><p>to sell the rest at today's pace</p></div>
+            </div>
+            <div class="call bad" style="background:var(--senior-soft)">NCR's ₹5–10 Cr band, Jan–Sep 2026: <b style="color:var(--ink)">5,002 launched, 4,033 sold.</b> 57% of NCR's unsold homes are in Gurugram.</div>
+          </div>
+        </div>
+        <div class="banner" style="padding:14px 20px"><p style="color:var(--on-forest)">The rest sells <b>week by week</b>. Max already calls it "sustenance sales".</p></div>
+      </div>
+      <p class="src">Max Estates FY26 results (BSE, 23 May 2026) and Q1 FY27 release (Aug 2026); ₹1,704 Cr = 68% of Phase 1 launched inventory. Max exchange filing, 6 Oct 2026: ₹962 Cr in Q2, ₹1,747 Cr in H1 FY27. HARERA RC/REP/HARERA/GGM/1012/744/2025/115: 1,096 homes on a 14.29-acre registered phase. Environmental Clearance, Sep 2026: green 20.05% of plot. Scores: Fixit Buyer Intelligence Workbooks, Oct 2026 (bars out of 5, gauges out of 10; legal capped until RERA filings are read). Knight Frank India 9M CY2026, via Business Standard, 5 Oct 2026. 6+ quarters = ~₹5,550 Cr ÷ ~₹875 Cr a quarter.</p>
+    </div>
+
+    <!-- 3 WHAT ISN'T WORKING -->
+    <div class="panel" role="tabpanel" id="p-gaps" data-tab="gaps" data-name="What isn't working" hidden>
+      <div class="sec">
+        <span class="tag bad">B · What isn't working</span>
+        <h2>The buyer's first conversation belongs to someone else.</h2>
+        <div class="g3">
+          <div class="card">
+            <h3>Who advertises "Estate 361" on Meta</h3><p class="cap">All 30 live ads, India</p>
+            <div class="waffle" id="waffle" role="img" aria-label="22 senior living, 4 brokers, 1 Max Estates, 3 unrelated"></div>
+            <div class="legend" style="flex-direction:column;gap:6px">
+              <span><i style="background:var(--senior)"></i><b class="mono">22</b>&nbsp;Senior living</span>
+              <span><i style="background:var(--broker)"></i><b class="mono">4</b>&nbsp;Brokers</span>
+              <span><i style="background:#fff;box-shadow:inset 0 0 0 2px #0A0A0A"></i><b class="mono">1</b>&nbsp;Max Estates</span>
+              <span><i style="background:var(--other)"></i><b class="mono">3</b>&nbsp;Unrelated</span>
+            </div>
+            <div class="call bad" style="margin-top:12px"><b>22 ads talk to the parent.</b> None to the child who pays.</div>
+          </div>
+          <div class="card">
+            <h3>What Max Estates' own Meta page runs</h3><p class="cap">All 12 live ads</p>
+            <div class="bars">
+              <div class="br"><span>Noida lead ads</span><div class="tr"><i style="width:100%"></i></div><span class="val">8</span></div>
+              <div class="br"><span>London event, to Noida</span><div class="tr"><i style="width:37.5%"></i></div><span class="val">3</span></div>
+              <div class="br me"><span>Carnival invite</span><div class="tr"><i style="width:12.5%"></i></div><span class="val">1</span></div>
+              <div class="br zero"><span><b>Estate 361 enquiry ads</b></span><div class="tr"></div><span class="val">0</span></div>
+            </div>
+            <h3 style="margin-top:22px">Google ads on the Max name, 30 days</h3>
+            <div class="bars">
+              <div class="br"><span>One broker's 2 lookalike sites</span><div class="tr"><i style="width:100%;background:var(--broker)"></i></div><span class="val">44</span></div>
+              <div class="br me"><span>maxestates.in (brand film)</span><div class="tr"><i style="width:2.3%;min-width:4px"></i></div><span class="val">1</span></div>
+            </div>
+            <p class="cap" style="margin-top:10px">24 lookalike sites bid on your name.</p>
+          </div>
+          <div class="card">
+            <div class="lbl">What a buyer sees before your sales team speaks</div>
+            <div class="chips">
+              <div class="chip">₹22,350 / sq ft<small>broker quote</small></div>
+              <div class="chip">20 : 20 : 40 + subvention<small>one broker's plan</small></div>
+              <div class="chip">30 : 30 : 40<small>another channel's plan</small></div>
+              <div class="chip">3 BHK from ₹5.4 Cr<small>listing portal</small></div>
+              <div class="chip">3 BHK at ₹7.74 Cr<small>listing portal</small></div>
+              <div class="chip warn">"All Rights Reserved with Max Estates"<small>footer on a lookalike site</small></div>
+            </div>
+            <p style="font-size:16px;margin-top:16px">Five prices from five sources. Yours: ~₹22,000 a sq ft. <b>No buyer hears it from you first.</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="sec">
+        <h2>Nobody searches for "Estate 361". Few engage with the feed.</h2>
+        <div class="g2">
+          <div class="card"><h3>Monthly Google searches</h3>
+            <div class="bars">
+              <div class="br"><span>dlf privana</span><div class="tr"><i style="width:100%"></i></div><span class="val">6,600</span></div>
+              <div class="br"><span>krisumi waterfall residences gurgaon</span><div class="tr"><i style="width:81.8%"></i></div><span class="val">5,400</span></div>
+              <div class="br"><span>sobha altus</span><div class="tr"><i style="width:28.8%"></i></div><span class="val">1,900</span></div>
+              <div class="br me"><span>estate 360 by max estates</span><div class="tr"><i style="width:28.8%"></i></div><span class="val">1,900</span></div>
+              <div class="br me"><span>max estates gurgaon</span><div class="tr"><i style="width:13.3%"></i></div><span class="val">880</span></div>
+              <div class="br zero"><span><b>estate 361</b></span><div class="tr"></div><span class="val">too low</span></div>
+            </div></div>
+          <div class="card"><h3>Instagram: likes per post</h3><p class="cap">Median of the last 12 posts · followers in brackets</p>
+            <div class="bars">
+              <div class="br"><span>Krisumi (48.8K)</span><div class="tr"><i style="width:100%"></i></div><span class="val">781</span></div>
+              <div class="br"><span>Elan (79.6K)</span><div class="tr"><i style="width:17.2%"></i></div><span class="val">134</span></div>
+              <div class="br"><span>Sobha (44.5K)</span><div class="tr"><i style="width:14.6%"></i></div><span class="val">114</span></div>
+              <div class="br"><span>Signature (224K)</span><div class="tr"><i style="width:12%"></i></div><span class="val">94</span></div>
+              <div class="br me"><span>Max Estates (48.6K)</span><div class="tr"><i style="width:3.2%"></i></div><span class="val">25</span></div>
+            </div></div>
+        </div>
+        <div class="g2">
+          <div class="call bad"><b>12 of 12</b> posts sell well-being. <b>None</b> shows a home or a price.</div>
+          <div class="call ok">Films work: <b>112K</b> views (10-year film), <b>67K</b> (Carnival). Nobody sees a home.</div>
+        </div>
+      </div>
+      <p class="src">Fixit scan of Meta Ad Library, live ads in India, 12 Oct 2026 (keyword "Estate 361"; official page MaxEstatesLtd). Google Ads Transparency Centre, India, last 30 days to 12 Oct 2026. Partner sites and listing portals, Oct 2026 (as displayed; not Max-confirmed). Max Estates FY26 results (BSE, 23 May 2026). Search volumes are seodata.dev estimates, Jun–Oct 2026. Instagram profiles, 12 Oct 2026; @maxestates last 12 posts, hidden like counts excluded.</p>
+    </div>
+
+    <!-- 4 COMPETITORS & PRICE -->
+    <div class="panel" role="tabpanel" id="p-compete" data-tab="compete" data-name="Competitors &amp; price" hidden>
+      <div class="sec">
+        <span class="tag bad">B · What isn't working</span>
+        <h2>Competitors sell proof. Estate 361 sells a philosophy.</h2>
+        <div class="g3">
+          <div class="card comp"><div class="who"><b>Krisumi</b><span>Sector 36A · next door</span></div><h4>Always-on, investor-grade proof</h4><div class="pf">₹8,500 → ₹24,000/sq ft<br>"Delivered ahead of schedule"<small>as advertised</small></div><div class="gap"><b>GAP</b>Next door, selling proof daily.</div></div>
+          <div class="card comp"><div class="who"><b>Smartworld One DXP</b><span>Sector 113</span></div><h4>One sharp offer, on repeat</h4><div class="pf">"Own a 4.5 BHK.<br>Pay for a 3.5 BHK."<small>ad copy</small></div><div class="gap"><b>GAP</b>Your plan never becomes an offer.</div></div>
+          <div class="card comp"><div class="who"><b>DLF Privana North</b><span>SPR · Sectors 76–77</span></div><h4>An NRI desk and a sell-out</h4><div class="pf">27% NRI buyers<br>₹11,000 Cr in a week<small>DLF filing</small></div><div class="gap"><b>GAP</b>Max's London ads point to Noida.</div></div>
+          <div class="card comp"><div class="who"><b>DLF The Aureva</b><span>Sector 63 · senior</span></div><h4>Senior living sold as luxury</h4><div class="pf">172 homes · ₹1,985 Cr<br>sold out at ~₹28,000/sq ft<small>DLF filing</small></div><div class="gap"><b>GAP</b>Antara is sold as care, to the parent.</div></div>
+          <div class="card comp"><div class="who"><b>Elan</b><span>Sector 106</span></div><h4>A payment-plan hook</h4><div class="pf">"20% now, next payment<br>after 3.5 years"<small>ad copy</small></div><div class="gap"><b class="l">LESSON</b>Hooks sell; without proof, discounts follow.</div></div>
+          <div class="card comp"><div class="who"><b>Max's own owners</b><span>Estate 360 · Estate 128</span></div><h4>The market you already won</h4><div class="pf">₹7,565 Cr<br>of homes already bought from Max<small>Max releases</small></div><div class="gap"><b>GAP</b>No owner referral in any live ad.</div></div>
+        </div>
+        <div class="strip"><b>The opening:</b> DLF's bookings fell 94% in Q1 FY27 on deferred launches. Our read: that buyer is still choosing, which is a window for Estate 361.</div>
+      </div>
+      <div class="sec">
+        <span class="tag c">C · Our read</span>
+        <h2>Priced above every ready home nearby. Proof, not price, closes it.</h2>
+        <div class="card"><div class="ladder-wrap"><div class="ladder-inner" id="ladder-family"></div></div></div>
+        <div class="g3">
+          <div class="card" style="border-top:3px solid var(--bad)"><h3>No flip case</h3><p class="cap" style="font-size:13.5px;color:var(--ink-2)">Ready homes nearby resell at ₹15–20k. No gap to flip into.</p></div>
+          <div class="card" style="border-top:3px solid var(--family)"><h3>An end-user product</h3><p class="cap" style="font-size:13.5px;color:var(--ink-2)">A family that will live here asks: "Will Max deliver?"</p></div>
+          <div class="card" style="border-top:3px solid var(--senior)"><h3>Two decision-makers</h3><p class="cap" style="font-size:13.5px;color:var(--ink-2)">Family homes: the household. Antara homes: the child, often abroad.</p></div>
+        </div>
+      </div>
+      <p class="src">Fixit scan of Meta Ad Library, 12 Oct 2026; developer claims as advertised, not verified. DLF regulatory filing via PTI, 18 Jun 2025 (1,164 homes, ~₹11,000 Cr, NRI share 27%). DLF filing, 4 Oct 2026, via Business Today (The Aureva). Max Estates Q1 FY27 release (Estate 360 ₹4,831 Cr; Estate 128 ₹2,734 Cr). DLF Q1 FY27 bookings ₹657 Cr, down 94% YoY. Price ranges: portal listings (99acres, Squareyards, Realty Hunting), Aug–Oct 2026, asking prices, not transactions; Estate 361 line = Max's ~₹22,000/sq ft average (FY26 results); DLF Privana North ~₹23,000/sq ft (JM Financial, Aug 2025).</p>
+    </div>
+
+    <!-- 5 BUYERS -->
+    <div class="panel" role="tabpanel" id="p-buyers" data-tab="buyers" data-name="The buyers" hidden>
+      <div class="sec">
+        <span class="tag c">C · Our read</span>
+        <h2>Six families. One gate.</h2>
+        <div class="g2" style="grid-template-columns:minmax(0,2.3fr) minmax(0,1fr)">
+          <div class="card" style="overflow-x:auto"><table class="mx" id="mx"></table>
+            <div class="legend"><span><i class="wd w2" style="width:12px;height:12px"></i>weighs most</span><span><i class="wd w1" style="width:10px;height:10px"></i>weighs</span><span><i class="wd w0"></i>minor</span></div></div>
+          <div class="card ages"><div class="lbl">Today → keys, Sep 2033</div>
+            <div class="legend"><span><i style="background:var(--other)"></i>2026</span><span><i style="background:var(--head)"></i>2033</span></div>
+            <div id="ages"></div>
+            <div class="call" style="background:var(--surface-2);margin-top:14px">Every family is <b>7 years older</b> at handover.</div></div>
+        </div>
+      </div>
+      <div class="sec">
+        <h2>Every pain meets one strength, and its honest limit.</h2>
+        <div class="card" id="pains"></div>
+        <div class="why"><span class="lbl">Why now</span><b>Today's rate, fixed</b><b>Pay as it's built</b><b>Keep your home till 2033</b><small>Never a price forecast.</small></div>
+      </div>
+      <div class="sec">
+        <span class="tag d">D · Two homes, two audiences</span>
+        <h2>Same gate. Two different sales.</h2>
+        <div style="overflow-x:auto"><table class="cmp" style="min-width:560px">
+          <thead><tr><th style="background:transparent"></th><th class="f">General living</th><th class="s">Senior living</th></tr></thead>
+          <tbody>
+            <tr><td>Lives here</td><td class="f">Family of 4–7 + help</td><td class="s">Couple 60–75, or senior + attendant</td></tr>
+            <tr><td>Decides</td><td class="f">The household</td><td class="s">The adult child, often abroad</td></tr>
+            <tr><td>Homes</td><td class="f">3 BHK · 4 BHK</td><td class="s">Type B · Type A</td></tr>
+            <tr><td>Base price</td><td class="f">~₹7.1 Cr · ~₹9.0 Cr</td><td class="s">~₹6.0 Cr · ~₹7.6 Cr</td></tr>
+            <tr><td>First doubt</td><td class="f">"Will Max deliver?"</td><td class="s">"Who runs it, at what charge?"</td></tr>
+            <tr><td>Proof</td><td class="f">Estate 360, filmed monthly</td><td class="s">Antara's homes, visited</td></tr>
+            <tr><td>Message</td><td class="f">Two homes a core. A staff door.</td><td class="s">Parents next door.</td></tr>
+            <tr><td>Window</td><td class="f">Every week · Diwali</td><td class="s">Dec–Jan, NRIs home</td></tr>
+            <tr><td>Investor case</td><td class="f">Weak</td><td class="s">None</td></tr>
+          </tbody></table></div>
+      </div>
+      <p class="src">Fixit need analysis from the Buyer Intelligence Workbooks, to be calibrated with Max's CRM. HARERA completion 30 Sep 2033; ages illustrate one household, not data. Strengths from Estate 361 unit plans and brochure (planned provisions, indicative); numbers match the six families above. Base price = plan area × Max's reported ~₹22,000/sq ft average (FY26 results), before PLC, parking, GST and stamp duty; indicative, not a quote.</p>
+    </div>
+
+    <!-- 6 FAMILY HOMES -->
+    <div class="panel" role="tabpanel" id="p-family" data-tab="family" data-name="Family homes" hidden>
+      <div class="sec">
+        <span class="tag d">D1 · General living</span>
+        <h2>The family homes.</h2>
+        <div class="g2" style="grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)">
+          <div style="display:grid;gap:14px;min-width:0" id="plans-family"></div>
+          <div class="card"><div class="lbl">Unit block</div><div class="g2" id="g-family" style="margin-top:8px"></div>
+            <div class="banner" style="margin-top:14px;padding:16px 18px"><div class="big" style="font-size:32px">+~₹1.9 Cr</div><p>Same 54% efficiency. The 4 BHK adds a parents' suite, a bigger kitchen and room for two staff.</p></div></div>
+        </div>
+      </div>
+      <div class="sec">
+        <h2>Why they live better than they sell.</h2>
+        <div class="g2" id="feat-family"></div>
+        <div class="call ok"><b>No plan scores below 3.5.</b> Every plan feature scores 3.5 or better.</div>
+      </div>
+      <div class="sec">
+        <h2>Who fits, and who to qualify out.</h2>
+        <div class="g2" id="fit-family"></div>
+        <div class="q4"><b>First call: four questions</b><div><i>1</i>Own or rent?</div><div><i>2</i>Live-in help?</div><div><i>3</i>Where's your office?</div><div><i>4</i>Booking funds ready?</div></div>
+      </div>
+      <div class="sec">
+        <h2>Where the family buyers are.</h2>
+        <div class="g2">
+          <div class="card"><div class="lbl">Where they work · income these jobs pay</div><div id="inc-family"></div></div>
+          <div class="card"><div class="lbl">Where they live today · why they'd move</div><div class="lives" id="lives-family" style="margin-top:8px"></div></div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center"><b style="color:var(--bad);font-size:14px">Don't pay for:</b><span class="chip no">Renters</span><span class="chip no">Noida commuters</span><span class="chip no">First-home buyers → The Terraces</span><span class="chip no">Golf Course Road owners</span><span class="chip no">Investor-only buyers</span></div>
+      </div>
+      <p class="src">Estate 361 unit plans (total area, RERA carpet, balcony as printed); walls = 15% RERA partition allowance; efficiency = carpet ÷ total (Fixit). Ratings out of 5 from the Fixit Buyer Intelligence Workbook, General Living, Oct 2026. Base = plan area × ~₹22,000/sq ft (Max FY26 results). Income = net household income for an EMI ≤ 40% on a 75% loan at 8.5% over 20 years; Fixit directional estimates.</p>
+    </div>
+
+    <!-- 7 ANTARA HOMES -->
+    <div class="panel" role="tabpanel" id="p-antara" data-tab="antara" data-name="Antara homes" hidden>
+      <div class="sec">
+        <span class="tag d">D2 · Senior living</span>
+        <h2>The Antara homes.</h2>
+        <div class="g2" style="grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)">
+          <div style="display:grid;gap:14px;min-width:0" id="plans-senior"></div>
+          <div class="card"><div class="lbl">Unit block</div><div class="g2" id="g-senior" style="margin-top:8px"></div>
+            <div class="tile" style="background:var(--surface-2);border:0;margin-top:12px"><div class="lbl">Neighbourhood, weighted for a senior</div><div class="v" style="margin-top:8px">5.5<small>/ 10</small></div><p>Hospital <b style="color:var(--good)">4.0</b> · Airport <b style="color:var(--good)">4.0</b> · Air <b style="color:var(--bad)">2.0</b> · Resale <b style="color:var(--bad)">1.5</b></p></div>
+            <div class="banner" style="margin-top:12px;padding:16px 18px"><div class="big" style="font-size:32px">+~₹1.6 Cr</div><p>Type A adds an attendant suite at the door, a fourth bath and a study.</p></div></div>
+        </div>
+      </div>
+      <div class="sec">
+        <h2>What the price says to a family.</h2>
+        <div class="card"><div class="ladder-wrap"><div class="ladder-inner" id="ladder-senior"></div></div></div>
+        <div class="g3">
+          <div class="card"><h3 style="color:var(--senior)">At par with the family towers</h3><p style="margin-top:6px;font-size:14px">The premium is in the monthly service, which is not yet published.</p></div>
+          <div class="card" style="background:var(--forest);border-color:transparent"><h3 style="color:var(--on-forest)">No investor case</h3><p style="margin-top:6px;font-size:14px;color:var(--on-forest-2)">Few ready senior homes to compare; the next buyer may need to be a senior.</p></div>
+          <div class="card"><h3 style="color:var(--senior)">The care-home check</h3><div class="tile" style="padding:0;border:0;background:transparent"><div class="v" style="margin-top:6px">₹3.5 L<small>a month</small></div></div><p style="margin-top:6px;font-size:13.5px;color:var(--ink-2)">Type B's base in a 7% deposit, above a care home's ₹0.35–1.5 L. Sell the door, the title and the family.</p></div>
+        </div>
+      </div>
+      <div class="sec">
+        <h2>What the parent gets, and what to fix.</h2>
+        <div class="g2" id="feat-senior"></div>
+        <div class="lbl" style="color:var(--bad)">To handle · senior only</div>
+        <div class="g4">
+          <div class="hz"><b>No room for live-in help (B)</b><span class="sc">2.0 / 5</span><span class="fx">Route to Type A.</span></div>
+          <div class="hz"><b>Resale rule unwritten</b><span class="sc">1.5 / 5</span><span class="fx">Get the age rule in writing.</span></div>
+          <div class="hz"><b>Monthly charge unpublished</b><span class="sc">not rated</span><span class="fx">Publish Antara's fees.</span></div>
+          <div class="hz"><b>Two balance sheets</b><span class="sc">2.5 / 5</span><span class="fx">Show the Antara agreement.</span></div>
+        </div>
+      </div>
+      <div class="sec">
+        <h2>Who fits. Ask the parent first.</h2>
+        <div class="g2" id="fit-senior"></div>
+        <div class="q4"><b>First call: four questions</b><div><i>1</i>Who lives, who decides?</div><div><i>2</i>Live-in or day help?</div><div><i>3</i>Where's the nearest child?</div><div><i>4</i>Booking funds ready?</div></div>
+      </div>
+      <div class="sec">
+        <h2>The child decides. Where to find them.</h2>
+        <div class="g2">
+          <div class="card"><div class="lbl">Where the children work · income these jobs pay</div><div id="inc-senior"></div></div>
+          <div class="card"><div class="lbl">Where the parents live today · why they'd move</div><div class="lives" id="lives-senior" style="margin-top:8px"></div></div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center"><b style="color:var(--bad);font-size:14px">Don't pay for:</b><span class="chip no">Seniors needing care before 2033</span><span class="chip no">Investors</span><span class="chip no">Pension-only, no family</span><span class="chip no">Children in Noida / East Delhi</span></div>
+      </div>
+      <p class="src">Estate 361 senior-living unit plans (Senior Living Residence 2); walls = 15% RERA allowance; efficiency computed by Fixit. Fixit Buyer Intelligence Workbook, Senior Living, Oct 2026 (senior weightings). Senior comparators: Realty Hunting senior-living census (Oct 2026) and housing.com (Antara Noida), asking prices, directional. DLF filing, 4 Oct 2026 (The Aureva, ~₹28,000/sq ft). Care-home check: 2,721 sq ft × ₹22,000 × 7% ÷ 12; care-home range as reported for Antara's Gurugram homes. Income = co-borrower net income for an EMI ≤ 40%, 15-year loan; Fixit estimates.</p>
+    </div>
+
+    <!-- 8 NRI -->
+    <div class="panel" role="tabpanel" id="p-nri" data-tab="nri" data-name="NRI wave" hidden>
+      <div class="sec">
+        <span class="tag d">D · Two homes, two audiences</span>
+        <h2>The second wave abroad: two different NRIs.</h2>
+        <div class="g2">
+          <div class="card" style="border-top:4px solid var(--family)"><div class="lbl" style="color:var(--good)">Family homes · NRI index</div><div class="bars" id="nri-family"></div><p class="cap" style="margin-top:12px">Grey: no relative to inspect, so inbound enquiries only.</p></div>
+          <div class="card" style="border-top:4px solid var(--senior)"><div class="lbl" style="color:var(--senior)">Antara homes · NRI index</div><div class="bars" id="nri-senior"></div><p class="cap" style="margin-top:12px">The parents inspect for the child abroad.</p></div>
+        </div>
+        <div class="card"><div class="lbl" style="margin-bottom:12px">When to be in front of them</div><div class="cal" id="cal"></div></div>
+      </div>
+      <p class="src">Directional index out of 10, Fixit analysis (diaspora size, NCR links, flight time). Calendar: Diwali 8 Nov 2026; NRI families visit NCR from mid-December to early January.</p>
+    </div>
+  </section>
+</div>
+
+<script>
+(function(){
+  const $ = s => document.querySelector(s);
+  const css = v => `var(--${v})`;
+
+  /* ---------- helpers ---------- */
+  function gauge(v, max, color, label){
+    const r=48, C=2*Math.PI*r, arc=C*0.75, val=arc*Math.max(0,Math.min(1,v/max));
+    return `<div class="gauge"><svg viewBox="0 0 120 112" role="img" aria-label="${label||''} ${v} out of ${max}">
+      <circle cx="60" cy="60" r="${r}" fill="none" stroke="var(--track)" stroke-width="11" stroke-linecap="round" stroke-dasharray="${arc} ${C}" transform="rotate(135 60 60)"/>
+      <circle cx="60" cy="60" r="${r}" fill="none" stroke="${color}" stroke-width="11" stroke-linecap="round" stroke-dasharray="${val} ${C}" transform="rotate(135 60 60)"/>
+      <text x="60" y="64" text-anchor="middle" font-size="26" font-weight="700" fill="var(--ink)">${v.toFixed(1)}</text>
+      <text x="60" y="84" text-anchor="middle" font-size="11" fill="var(--muted)">/${max}</text></svg>${label?`<span class="gl">${label}</span>`:''}</div>`;
+  }
+  function scoreBars(rows, max){
+    return rows.map(([k,v])=>{const cls=v>=4?'s':(v<=2.5?'w':'');
+      return `<div class="br ${cls}"><span>${k}</span><div class="tr"><i style="width:${v/max*100}%"></i></div><span class="val">${v.toFixed(1)}</span></div>`}).join('');
+  }
+
+  /* ---------- tabs ---------- */
+  const panels=[...document.querySelectorAll('.panel')];
+  const tl=$('#tablist');
+  panels.forEach((p,i)=>{
+    const b=document.createElement('button');
+    b.className='tab'; b.type='button'; b.setAttribute('role','tab'); b.id='t-'+p.dataset.tab;
+    b.setAttribute('aria-controls',p.id); b.dataset.tab=p.dataset.tab;
+    b.innerHTML=`<span class="n">0${i+1}</span>${p.dataset.name}`;
+    b.addEventListener('click',()=>show(p.dataset.tab,true));
+    tl.appendChild(b);
+  });
+  tl.addEventListener('keydown',e=>{
+    if(!['ArrowRight','ArrowLeft'].includes(e.key))return;
+    const tabs=[...tl.children], i=tabs.findIndex(t=>t.getAttribute('aria-selected')==='true');
+    const n=tabs[(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length]; n.focus(); show(n.dataset.tab,true);
+  });
+  function show(id, scroll){
+    panels.forEach(p=>p.hidden=p.dataset.tab!==id);
+    [...tl.children].forEach(t=>{const on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on&&scroll)t.scrollIntoView({block:'nearest',inline:'center'});});
+    try{history.replaceState(null,'','#'+id)}catch(e){}
+    if(scroll){const top=$('#dash').getBoundingClientRect().top+window.scrollY; if(window.scrollY>top) window.scrollTo({top,behavior:'auto'});}
+  }
+
+  /* ---------- summary jumps ---------- */
+  const jumps=[
+    ['project','The project','18.23 acres, ₹9,000 Cr, three homes. The estate scores 6.4 / 10; the delivery horizon is the weak spot.'],
+    ['gaps','What isn\'t working','Brokers and lookalike sites own the name. Nobody searches "Estate 361".'],
+    ['compete','Competitors & price','Competitors sell proof. At ~₹22,000 a sq ft, proof closes the sale, not price.'],
+    ['buyers','The buyers','Six families, one gate. Every pain meets a strength, and an honest limit.'],
+    ['family','Family homes','3 & 4 BHK with staff rooms. They live better than they sell.'],
+    ['antara','Antara homes & NRIs','Type B and Type A. The adult child decides, often from abroad. December–January is the window.'],
+  ];
+  $('#jumps').innerHTML=jumps.map(([id,t,p])=>`<button class="jump" type="button" data-go="${id}"><span class="t">${t}<span>Open →</span></span><p>${p}</p></button>`).join('')
+;
+  document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>show(b.dataset.go,true)));
+
+  /* ---------- project ---------- */
+  $('#g-project').innerHTML=gauge(6.4,10,css('head'));
+  $('#b-project').innerHTML=scoreBars([['Delivery record',3.5],['Legal / RERA (capped)',2.5],['Land parcel scale',3.0],['Land contiguity',4.5],['Density',3.0],['Open & green',3.0],['Amenities',4.0],['Site constraints',3.0],['Delivery horizon',1.0],['Specification',4.0]],5);
+  $('#g-homes').innerHTML=[[6.5,'3 BHK','family'],[6.5,'4 BHK','family'],[6.2,'Type B','senior'],[6.5,'Type A','senior']].map(([v,l,c])=>gauge(v,10,css(c),l)).join('');
+  $('#g-hood').innerHTML=gauge(5.8,10,css('family'));
+  $('#b-hood').innerHTML=scoreBars([['Employment access',3.0],['Metro / transit',1.5],['Airport',4.0],['Schools',3.1],['Healthcare',4.3],['Daily retail',2.5],['Maturity & safety',2.0],['1-yr price move',4.0],['Yield & resale',2.5],['Air & noise',2.5],['Shared greens',2.0]],5);
+  const drive=[['Global City (planned)',2,'other','not built'],['Genesis Hospital',5,'good',''],['Metro (proposed)',5,'other','not built'],['N.S.P. School',8,'good',''],['Medanta',15,'good',''],['Cyber City',30,'senior',''],['IGI Airport',35,'senior','']];
+  $('#b-drive').innerHTML=drive.map(([k,m,c,n])=>`<div class="br"><span>${k}${n?` <span class="cap" style="display:inline">· ${n}</span>`:''}</span><div class="tr"><i style="width:${m/45*100}%;background:${css(c)}"></i></div><span class="val">${m} min</span></div>`).join('');
+
+  /* ---------- gaps ---------- */
+  $('#waffle').innerHTML=[].concat(['max'],Array(4).fill('broker'),Array(22).fill('senior'),Array(3).fill('other')).map(c=>c==='max'?'<i style="background:#fff;box-shadow:inset 0 0 0 2.5px #0A0A0A"></i>':`<i style="background:${css(c)}"></i>`).join('');
+
+  /* ---------- price ladders ---------- */
+  function ladder(el, dom, groups, mark, step){
+    const [lo,hi]=dom, pct=v=>(v-lo)/(hi-lo)*100;
+    let h='';
+    groups.forEach(g=>{
+      h+=`<div class="lrow"><div class="g"><b>${g[0]}</b><span>${g[1]}</span></div><div class="lt">`;
+      g[2].forEach(([name,a,b,col])=>{
+        const L=pct(a), W=b?pct(b)-pct(a):0, lab=b?`₹${a.toFixed(1)}–${b.toFixed(1)}k`:`₹${a.toFixed(1)}k`;
+        const tx=(b?pct(b):pct(a))+1.4, right=tx>66;
+        h+=`<div class="it">${b?`<span class="m" style="left:${L}%;width:${W}%;background:${css(col)}"></span>`:`<span class="m dot" style="left:${L}%;background:${css(col)}"></span>`}
+          <span class="t" style="${right?`right:${100-(L-1.4)}%`:`left:${tx}%`}"><b>${name}</b> ${lab}</span></div>`;
+      });
+      h+=`</div></div>`;
+    });
+    const ticks=[]; for(let v=lo; v<=hi+0.01; v+=step) ticks.push(v);
+    h+=`<div class="axisx"><div></div><div class="ticks">${ticks.map((v,k)=>`<span style="left:${pct(v)}%;${k===ticks.length-1?'transform:translateX(-100%)':''}">₹${Math.round(v)}k</span>`).join('')}</div></div>`;
+    el.innerHTML=`<div class="ladder">${h}</div>`;
+    const lad=el.querySelector('.ladder'), lt=el.querySelector('.lt');
+    const line=document.createElement('div'); line.className='e361';
+    line.innerHTML=`<span>${mark}</span>`;
+    lad.appendChild(line);
+    const place=()=>{const L=lt.getBoundingClientRect(), P=lad.getBoundingClientRect(); line.style.left=(L.left-P.left+L.width*pct(22)/100)+'px';
+      const last=lad.querySelectorAll('.lrow'); line.style.bottom=(P.bottom-last[last.length-1].getBoundingClientRect().bottom)+'px';};
+    place(); window.addEventListener('resize',place); return place;
+  }
+  const placers=[];
+  placers.push(ladder($('#ladder-family'),[10,30],[
+    ['Everyday stock','Dwarka Expressway average',[['Corridor average',13.8,0,'grey']]],
+    ['Ready homes nearby','What owners can resell for',[['Puri Emerald Bay',13.0,18.5,'family'],['Experion Windchants',15.0,17.4,'family'],['Krisumi Waterfall',15.4,19.3,'family'],['Sobha City',20.0,0,'family']]],
+    ["Max's own estates",'Same sector',[['Estate 360 resale asks',21.2,22.1,'senior']]],
+    ['Stronger launches','Brand and Golf Course Extn Rd',[['DLF Privana North',23.0,0,'grey'],['DLF The Aureva (senior)',28.0,0,'grey']]],
+  ],'Estate 361 · ~₹22,000 avg realisation',4));
+  placers.push(ladder($('#ladder-senior'),[8,32],[
+    ['Senior homes, ready','What residents can buy now',[['Silverglades, Sohna',10.2,0,'family'],['Antara Noida',17.8,0,'family']]],
+    ['Senior launches','What families choose between',[['JMS Silver Living',9.5,10.0,'senior'],['WAL Pravah',11.0,12.0,'senior'],['Pioneer Advait · keys 2027',17.5,0,'senior']]],
+    ['Stronger market','Golf Course Extn Rd',[['DLF The Aureva · sold out',28.0,0,'grey']]],
+  ],'Estate 361 · ~₹22,000 avg',4));
+
+  /* ---------- buyers ---------- */
+  const fams=[
+    ['The child in Gurugram','Live now','38–50 · parents in Dwarka','Type B','? Monthly charge?',[2,0,1,1,0,0],'p1'],
+    ['Couple planning ahead','Live now','62–72 · Dwarka society','Type B','? "We\'ll be 75"',[2,2,2,1,0,2],'p2'],
+    ['Three generations','Live now','Patriarch 70+, attendant','Type A + 4 BHK','? More care later?',[1,2,1,2,0,1],'p3'],
+    ['The NRI child','Dec–Jan','Dubai · US · UK','Type B / A','? No handover yet',[2,0,2,2,1,0],'p4'],
+    ['Moving both homes','Live now','Dwarka family + parents','3 BHK + Type B','? Two payment plans',[0,2,2,0,2,1],'p5'],
+    ['The downsizer','Live now','Plotted house, Palam Vihar','Type B / A','? "So much smaller"',[1,2,1,2,0,0],'p6'],
+  ];
+  $('#mx').innerHTML=`<thead><tr><th>Who they are</th><th>First doubt</th>${['Operator','Plan','Near','Care','Cost','Timing'].map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>`+
+    fams.map((f,i)=>`<tr><td><div class="fam"><span class="ic" style="background:${css(f[6])}">${i+1}</span><div><b>${f[0]}</b><span class="pill ${f[1]!=='Live now'?'w':''}">${f[1]}</span><small>${f[2]} · <em>${f[3]}</em></small></div></div></td><td class="doubt">${f[4]}</td>${f[5].map(w=>`<td><span class="wd w${w}" aria-label="${['minor','weighs','weighs most'][w]}"></span></td>`).join('')}</tr>`).join('')+`</tbody>`;
+  $('#ages').innerHTML=[['Their society building',31,38],['A parent',66,73],['A grandchild',9,16]].map(([k,a,b])=>
+    `<div class="r"><b>${k}</b><div class="ln"><i style="width:${a/90*72}%;background:var(--other)"></i><span style="color:var(--muted)">${a}</span></div><div class="ln"><i style="width:${b/90*72}%;background:var(--head)"></i><span style="white-space:nowrap">${b} yrs</span></div></div>`).join('');
+  const pains=[[[1],'Every repair runs through you','Antara runs the building','charge pending'],[[2],'Lift out, stairs with bags','Master suite off the foyer','keys 2033'],[[3],'Attendant on a cot','3.30 × 4.40 m attendant suite','Type A only'],[[5],'Grandparents once a week','Family + Antara, one gate','Forest not planted'],[[3,5],'Parents share a wall with kids','4 BHK bedroom 3, across the living room','long corridor'],[[4],'No one accountable nearby','Nurse · paramedics · ambulance','from possession'],[[6],'A big house run for two','Roof, tank, gate: the building\'s','smaller carpet'],[[1,4],'"Isn\'t a care home cheaper?"','Own door · family title · family next door','on cost, yes']];
+  $('#pains').innerHTML=`<div class="lbl" style="display:flex;justify-content:space-between;margin-bottom:6px"><span>Pain today → the strength that answers it</span><span>Honest limit</span></div>`+
+    pains.map(([n,p,s,l])=>`<div class="ps"><div class="nums">${n.map(k=>`<i style="background:${css('p'+k)}">${k}</i>`).join('')}</div><div class="pain">${p}</div><div class="ar">→</div><div class="str">✓ ${s}</div><div class="lim">⚠ ${l}</div></div>`).join('');
+
+  /* ---------- plans ---------- */
+  function plan(name, total, parts, note, col){
+    const [c,b,w,o]=parts, pc=v=>v/total*100;
+    return `<div class="card plan" style="border-top:4px solid ${css(col)}"><h3>${name}<span>${total.toLocaleString('en-IN')} sq ft</span></h3>
+      <div class="area"><div class="c" style="width:${pc(c)}%;background:${css(col)}">${c.toLocaleString('en-IN')}</div><div class="b" style="width:${pc(b)}%">${b}</div><div class="w" style="width:${pc(w)}%"></div><div class="o" style="width:${pc(o)}%">${o}</div></div>
+      <div class="akey"><span><i style="background:${css(col)}"></i>carpet</span><span><i style="background:var(--surface-2);border:1px solid var(--line)"></i>balcony</span><span><i style="background:var(--track)"></i>walls</span><span><i style="background:var(--surface-2);border:1px solid var(--line)"></i>common (${o})</span></div>
+      <div class="eff"><span>${note}</span><b>${Math.round(c/total*100)}% efficient</b></div></div>`;
+  }
+  $('#plans-family').innerHTML=plan('3 BHK + staff',3238,[1742,722,261,513],'Staff room with its own door · 8\'4" deck','family')+plan('4 BHK + staff',4082,[2196,805,329,752],'Bedroom 3 across the living room · 18\'7" kitchen','family');
+  $('#plans-senior').innerHTML=plan('Type B · 3 BHK',2721,[1464,590,220,447],'Every bedroom en-suite · no staff room','senior')+plan('Type A · 3 BHK+',3463,[1863,700,279,621],'Attendant suite at the door · 4 baths','senior');
+  $('#g-family').innerHTML=gauge(8.0,10,css('family'),'3 BHK')+gauge(8.3,10,css('senior'),'4 BHK');
+  $('#g-senior').innerHTML=gauge(7.3,10,css('family'),'Type B')+gauge(8.7,10,css('senior'),'Type A');
+
+  function feats(title, col, rows){
+    return `<div style="display:grid;gap:0;min-width:0"><div class="colhead" style="background:${css(col)}">${title}</div><div class="card" style="border-radius:0 0 14px 14px;border-top:0;padding-block:6px">`+
+      rows.map(([k,v,w])=>`<div class="feat"><div><b>${k}</b><div class="rt"><i><em style="width:${v/5*100}%;background:${css(col)}"></em></i><span>${v.toFixed(1)}</span></div></div><div class="who">${w}</div></div>`).join('')+`</div></div>`;
+  }
+  $('#feat-family').innerHTML=feats('3 BHK + staff','family',[['Staff room with its own door',4.5,'Households with live-in help'],['Two homes to a core',4.5,'Privacy-first families'],['The outdoor room',4.5,'Hosts and outdoor families'],['Every bedroom en-suite',4.0,'Teenagers; visiting parents'],['Healthcare within 15 minutes',4.3,'Families with ageing parents']])
+    +feats('4 BHK + staff','family',[["A parents' suite across the living room",4.0,'Three-generation families'],['The largest living room in the estate',4.5,'Families who entertain'],['Room for two staff',4.5,'A cook and a driver'],['A real kitchen',4.0,'Cook-run households'],['One continuous parcel',4.5,'Owners who watched a road arrive next door']]);
+  $('#feat-senior').innerHTML=feats('Type B · 3 BHK','senior',[['Every bedroom en-suite',4.5,'Couples who sleep separately'],['A master bath you can turn in',4.0,'Seniors who wake at night'],['Antara on site',4.6,"Children who can't visit daily"],['Wraparound balcony + storage room',4.0,'Gardeners and collectors']])
+    +feats('Type A · 3 BHK+','senior',[['A caregiver suite at the front door',5.0,'Seniors 70+ with an attendant'],['The largest master bath',4.5,'Walker and wheelchair users'],['Four baths, three dress rooms',5.0,'Visiting children, grandchildren'],['A living room for the whole family',4.5,'Patriarchs who host Sundays']]);
+
+  function fit(name, price, inc, rows, col){
+    return `<div class="card fit" style="border-top:4px solid ${css(col)}"><div class="hd"><div><b style="font-size:15px">${name}</b><div class="pr">${price}<small> base</small></div><p>Income from <b>${inc}</b> a year</p></div></div>
+      <div class="fr h"><span></span><span class="y">Fits</span><span class="n">Doesn't fit</span></div>`+
+      rows.map(([k,y,n])=>`<div class="fr"><span class="k">${k}</span><span class="y">${y}</span><span class="n">${n}</span></div>`).join('')+`</div>`;
+  }
+  $('#fit-family').innerHTML=fit('3 BHK + staff','~₹7.1 Cr','₹1.39 Cr',[['Household','Couple + 1–2 kids','Six or more'],['Parents','Visiting','Living in, with carer'],['Help','One live-in','Two live-in'],['Commute','Manesar · NH-48 · airport','Noida daily'],['Kitchen','Cook-run; deck dinners','Owner-cooks, weekly parties'],['Money','Owns today','Renting / keys before 2033']],'family')
+    +fit('4 BHK + staff','~₹9.0 Cr','₹1.75 Cr',[['Household','3 generations','Couple, no kids'],['Parents','In bedroom 3','Need a nurse now'],['Help','One or two live-in','No help at all'],['Commute','NH-48 business','Cross-NCR daily'],['Kitchen','18\'7" kitchen','Lock-and-leave'],['Money','Owns today','Must sell first']],'family');
+  $('#fit-senior').innerHTML=fit('Type B · 3 BHK','~₹6.0 Cr','₹1.33 Cr',[['Residents','Independent couple','Needs live-in help'],['Care','OPD + physio','High dependency now'],['Help','Day help','Live-in help'],['Family','Child ≤45 min, or NRI','Child visits daily from Noida'],['Hosting','Light cooking','Joint-family kitchen'],['Money','Owns a home','Needs care before 2033']],'senior')
+    +fit('Type A · 3 BHK+','~₹7.6 Cr','₹1.69 Cr',[['Residents','Senior + attendant','Single, wants smaller'],['Care','Night nurse likely','ICU-level needs'],['Help','Live-in attendant','Living alone, no help'],['Family','Child in Gurugram','No family nearby'],['Hosting','Sunday lunches','Big joint family'],['Money','Family-funded','Pension only']],'senior');
+
+  function income(el, rows, t1, t2, l1, l2){
+    const pct=v=>v/5*100;
+    const seg=(a,b,c)=>b>a?`<span class="seg ${c}" style="left:${pct(a)}%;width:${pct(b)-pct(a)}%"></span>`:'';
+    let h=`<div class="inc">`+rows.map(([k,a,b])=>`<div class="ir"><div><b>${k}</b><small>₹${a}–${b} Cr a year</small></div><div class="itr">${seg(a,Math.min(b,t1),'x')}${seg(Math.max(a,t1),Math.min(b,t2),'a')}${seg(Math.max(a,t2),b,'g')}
+      <span class="thr" style="left:${pct(t1)}%;border-color:var(--senior)"></span><span class="thr" style="left:${pct(t2)}%;border-color:var(--good)"></span></div></div>`).join('')+`</div>`;
+    h+=`<div class="iaxis"><div></div><div class="ticks">${[0,1,2,3,4,5].map(v=>`<span style="left:${pct(v)}%;${v===5?'transform:translateX(-100%)':''}">₹${v} Cr</span>`).join('')}</div></div>`;
+    h+=`<div class="thl"><span style="color:var(--ink-2);font-weight:600">┊ ${l1} from ₹${t1} Cr</span><span style="color:var(--ink);font-weight:600">┊ ${l2} from ₹${t2} Cr</span></div>`;
+    h+=`<p class="cap" style="margin-top:6px"><b style="color:var(--ink)">Black</b> carries either home · <b style="color:var(--senior)">grey</b> the smaller one · light grey neither</p>`;
+    el.innerHTML=h;
+  }
+  income($('#inc-family'),[['IMT Manesar',1.5,5],['Medanta & Signature',1,4],['Udyog Vihar HQs',1.5,4],['Cyber City & GCER',1.5,5]],1.39,1.75,'3 BHK','4 BHK');
+  income($('#inc-senior'),[['Cyber City & GCER',1.5,5],['Udyog Vihar HQs',1.5,4],['IMT Manesar',1.5,5],['Medanta consultants',1,4]],1.33,1.69,'Type B','Type A');
+  const lives=(rows)=>rows.map(([k,s,me])=>`<div class="${me?'me':''}"><b>${k}</b><span>${s}</span></div>`).join('');
+  $('#lives-family').innerHTML=lives([['Dwarka (Delhi) CGHS owners','No staff room, ageing lifts, no club'],['Palam Vihar & Sectors 21–23','Ageing stock on the same expressway'],['Nirvana Country / South City II','Ageing clubs; want privacy and an estate'],['Sohna Road, Sectors 47–49','Traffic and ageing amenities'],['Premium ready owners','Their buildings lack two-to-a-core and a clinic'],['New Gurgaon, Sectors 82–95','Mid-segment stock; want a branded estate'],["Max Estates' own owners",'Know the brand; HARERA check pending',1]]);
+  $('#lives-senior').innerHTML=lives([['Dwarka (Delhi) CGHS retirees','Ageing lifts, no care on site, children moved'],['Palam Vihar & old Gurugram HUDA','Stairs, isolation, security'],['West Delhi kothi owners','Downsizing into care; lead with care, not price'],['Antara Noida & Dehradun families','Want Gurugram, where the children are'],['Chandigarh & Panchkula retirees','Closer to grandchildren, without moving in'],['Parents of premium-ready owners','Children want them 20 minutes away'],["Max Estates owners' parents",'Parents next door; HARERA check pending',1]]);
+
+  /* ---------- NRI ---------- */
+  const nri=(rows,col)=>rows.map(([k,v,dim])=>`<div class="br ${dim?'dim':''}"><span><b style="font-weight:${dim?400:600}">${k}</b></span><div class="tr"><i style="width:${v*10}%;${dim?'':`background:${css(col)}`}"></i></div><span class="val">${v}</span></div>`).join('');
+  $('#nri-family').innerHTML=nri([['UAE',6],['Rest of the Gulf',4],['United Kingdom',4],['Singapore, Hong Kong',4],['United States',3],['Canada, Australia',3,1],['No family in NCR',2,1]],'family');
+  $('#nri-senior').innerHTML=nri([['UAE',8],['United States',7],['United Kingdom',6],['Canada',6],['Singapore, Australia',4],['NRI investors',1,1]],'senior');
+  $('#cal').innerHTML=[['Nov','a','Diwali'],['Dec','h','NRIs home'],['Jan','h','NRIs home'],['Feb','',''],['Mar','',''],['Apr','s','School moves'],['May','a',"Mother's Day"],['Jun','h','Summer visits'],['Jul','',''],['Aug','','']].map(([m,c,s])=>`<div><div class="m ${c}">${m}</div><small>${s}</small></div>`).join('');
+
+  /* ---------- flow ---------- */
+  const land=$('#landing'), dash=$('#dash'), go=$('#go'), steps=$('#steps');
+  const reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function openDash(tab){
+    land.hidden=true; dash.hidden=false; show(tab||'summary',false);
+    requestAnimationFrame(()=>placers.forEach(f=>f()));
+    window.scrollTo({top:0});
+  }
+  // re-place ladder lines whenever a panel becomes visible
+  tl.addEventListener('click',()=>requestAnimationFrame(()=>placers.forEach(f=>f())));
+  document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>requestAnimationFrame(()=>placers.forEach(f=>f())),{passive:true}));
+  go.addEventListener('click',()=>{
+    go.disabled=true; go.textContent='Analysing Estate 361…'; steps.hidden=false;
+    const lis=[...steps.children], dt=reduce?120:620; let i=0;
+    const tick=()=>{ if(i>0){lis[i-1].className='done';lis[i-1].querySelector('.dot').textContent='✓';}
+      if(i<lis.length){lis[i].className='run'; i++; setTimeout(tick,dt);} else setTimeout(()=>openDash('summary'),reduce?60:380); };
+    tick();
+  });
+  $('#restart').addEventListener('click',()=>{
+    dash.hidden=true; land.hidden=false; go.disabled=false; go.innerHTML='Analyse Estate 361 <span aria-hidden="true">→</span>';
+    steps.hidden=true; [...steps.children].forEach((li,k)=>{li.className='';li.querySelector('.dot').textContent=k+1;});
+    try{history.replaceState(null,'','#')}catch(e){} window.scrollTo({top:0});
+  });
+  const h=(location.hash||'').slice(1);
+  if(panels.some(p=>p.dataset.tab===h)) openDash(h);
+})();
+</script>
+
+</body>
+</html>
